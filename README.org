@@ -1,0 +1,22 @@
+* greppers/docs
+
+#+html: <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/The_Book_Hunters_by_Gordon_Grant.jpg/640px-The_Book_Hunters_by_Gordon_Grant.jpg" align="right" width="40%">
+
+This repository contains all kinds of documentation pertaining to our
+academic cloud project.
+
+The following is a list of principles that every document should
+follow:
+- Write things in [[https://orgmode.org][Org Mode]], compile them into [[https://www.latex-project.org/][LaTeX]] and share them as
+  a PDF
+- Diagrams should be written in a textual format such as to improve
+  consistency and ensure reproducibility across every one of them (see
+  the [[Tooling][Tooling]] section for more information)
+
+* Tooling
+
+Markup:
+- [[https://orgmode.org][Org Mode]]
+Graphing & diagrams:  
+- [[https://graphviz.org][Graphviz]]
+- [[https://plantuml.com][PlantUML]]
