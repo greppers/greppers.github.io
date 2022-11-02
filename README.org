@@ -1,6 +1,6 @@
 * greppers/docs
 
-#+html: <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/The_Book_Hunters_by_Gordon_Grant.jpg/640px-The_Book_Hunters_by_Gordon_Grant.jpg" align="right" width="40%">
+#+html: <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/The_Book_Hunters_by_Gordon_Grant.jpg/640px-The_Book_Hunters_by_Gordon_Grant.jpg" align="right" height="200px">
 
 This repository contains all kinds of documentation pertaining to our
 academic cloud project.
