@@ -3,7 +3,7 @@
 
 #+LATEX_HEADER: \usepackage{parskip}
 
-* Functional specification
+* Non-functional requirements
 
 ** Brief description
 
