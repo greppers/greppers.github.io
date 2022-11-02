@@ -1,0 +1,36 @@
+#+TITLE: Project specification
+#+AUTHOR: greppers
+
+#+LATEX_HEADER: \usepackage{parskip}
+
+* Functional specification
+
+** Brief description
+
+This project and the applications that compose it should provide
+unlimited access to our in-house cloud infrastructure, 
+
+The application we intend to develop should follow a software as a
+service (SaaS) model targeting one important resolution from the
+United Nation's 2030 Agenda.
+
+As such, access to the platform should be seamless and work on any
+device, it should not require any maintenance nor installation from
+the user. The application should also be able to handle large amounts
+of traffic and the infrastructure should scale vertically and
+horizontally as needed.
+
+The infrastructure should imperatively follow an open source model and
+utilize open source applications, offering orchestration capabilities
+similar to those of the Microsoft Azure platform. Though, it should
+not make any assumptions or depend on any specific hardware configuration.
+
+In case of any hardware failures, the pre-defined disaster recovery
+plan should take effect, and in turn, the chances of a data discrepancy or
+storage disk failure affecting the underlying infrastructure
+dramatically decrease.
+
+** TODO Components of the cloud infrastructure
+
+* Technical constraints
+
