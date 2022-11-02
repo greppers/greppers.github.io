@@ -11,9 +11,12 @@ follow:
   a PDF
 - Diagrams should be written in a textual format such as to improve
   consistency and ensure reproducibility across every one of them (see
-  the [[Tooling][Tooling]] section for more information)
+  the [[#tooling][Tooling]] section for more information)
 
 * Tooling
+:PROPERTIES:
+:CUSTOM_ID: tooling
+:END:
 
 Markup:
 - [[https://orgmode.org][Org Mode]]
