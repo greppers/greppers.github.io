@@ -32,7 +32,7 @@ infrastructure dramatically decrease.
 
 * Project Specification
 
-*** Functional requirements
+** Functional requirements
 
 #+ATTR_LATEX: :environment longtable :align |p{3cm}|p{7cm}|p{2cm}|
 | Requirement                                    | Description                                                                                                                                                                                            | Candidates                                      |
@@ -50,7 +50,7 @@ infrastructure dramatically decrease.
 | Self-healing capabilities                      | The cloud infrastructure should be able to automatically resolve certain issues                                                                                                                        | Kubernetes                                      |
 | Provide deployment patterns and templates      | The cloud infrastructure should provide a number of virtual machine templates to quicky get up and running                                                                                             | Proxmox (GUI), qemu-img with virt-sysprep (CLI) |
 
-*** Non-functional requirements
+** Non-functional requirements
 
 | Requirement                         | Description                                                                                                                                                                  |
 |-------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
