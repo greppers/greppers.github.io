@@ -84,7 +84,6 @@
 	       :base-directory "src"
 	       :publishing-directory "public"
 	       :publishing-function 'org-html-publish-to-html
-	       :exclude (regexp-opt '("theindex.org"))
 	       :recursive t
 	       :makeindex t
 	       :section-numbers t
