@@ -1,0 +1,22 @@
+nav {
+  padding-top: 1em;
+}
+
+nav > ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+nav > ul li {
+  display: inline-block;
+  font-size: 1.25em;
+}
+
+nav > ul li+li:before {
+ padding: 0 0.67em;
+ content: '/';
+}
+
+nav ul li > a {
+  text-decoration: none;
+}

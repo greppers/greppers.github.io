@@ -1,0 +1,3 @@
+[submodule "lisp/forgecast"]
+	path = lisp/forgecast
+	url = https://github.com/grtcdr/forgecast

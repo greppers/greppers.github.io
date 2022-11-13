@@ -1,7 +1,15 @@
-#+TITLE: Greppers
-#+SUBTITLE: Welcome to greppers' home page!
+#+TITLE: Home
 #+OPTIONS: toc:nil num:nil
 
-[[file:theindex.org][Head over to the index]] to browse the different documents of this website.
+#+HTML: <img src="https://upload.wikimedia.org/wikipedia/commons/d/de/RWS_Tarot_01_Magician.jpg" align="right" width="30%">
+
+You've reached the website of greppers, a group of university
+students aiming to address the /Quality Education/ goal from the
+[[https://sdgs.un.org/2030agenda][United Nations' 2030 Agenda]].
+
+[[file:docs/theindex.org][Head over to the index]] to browse the different documents in this
+website.
+
+You can [[https://github.com/greppers][find us on GitHub]], that's where we do stuff.
 
 

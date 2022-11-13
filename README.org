@@ -1,11 +1,8 @@
-#+TITLE: docs
-
-* Preface
+#+TITLE: greppers' website
 
 #+html: <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/The_Book_Hunters_by_Gordon_Grant.jpg/640px-The_Book_Hunters_by_Gordon_Grant.jpg" align="right" height="300px">
 
-This repository contains all kinds of documentation pertaining to our
-academic cloud project.
+* Principia
 
 The following is a list of principles that every document should
 follow:

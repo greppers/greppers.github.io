@@ -25,8 +25,11 @@
 ;; org-publish-project-alist.  It should also specify any other
 ;; options that affect the building of the website.
 
+(normal-top-level-add-subdirs-to-load-path)
+
 (require 'ox-publish)
 (require 'project)
+(require 'forgecast)
 
 (setq default-directory
       (expand-file-name
@@ -60,6 +63,17 @@
 
 ;; Functions:
 
+(defun org-html-format-spec (info)
+  "Return format specification for preamble and postamble.
+INFO is a plist used as a communication channel."
+  (let ((timestamp-format (plist-get info :html-metadata-timestamp-format)))
+    `((?e . ,(forgecast-get-resource-url 'edit))
+      (?t . ,(forgecast-get-resource-url 'tree))
+      (?C . ,(let ((file (plist-get info :input-file)))
+	       (format-time-string timestamp-format
+				   (and file (file-attribute-modification-time
+					      (file-attributes file)))))))))
+
 (defun publish-read-template (file)
   "Read a file from the templates directory."
   (with-temp-buffer
@@ -70,30 +84,50 @@
 (defun publish-html-head ()
   (string-join
    '("<link rel=\"stylesheet\" href=\"https://cdn.simplecss.org/simple.min.css\" />"
+     "<link rel=\"stylesheet\" href=\"/css/main.css\" />"
      "<link rel=\"icon\" type=\"image/x-icon\" href=\"https://avatars.githubusercontent.com/u/117290777\" />")
    "\n"))
 
 ;;; Project specification:
 
 (setq org-publish-project-alist
-      (let ((content-preamble (publish-read-template "preamble/content.html"))
+      (let ((main-preamble (publish-read-template "preamble/content.html"))
+	    (docs-postamble (publish-read-template "postamble/docs.html"))
 	    (html-head (publish-html-head)))
 	(list
-	 (list "content"
+	 (list "main"
 	       :base-extension "org"
 	       :base-directory "src"
 	       :publishing-directory "public"
 	       :publishing-function 'org-html-publish-to-html
-	       :recursive t
+	       :section-numbers t
+	       :with-toc t
+	       :with-title t
+	       :html-doctype "html5"
+	       :html-html5-fancy t
+	       :html-preamble main-preamble
+	       :html-postamble nil
+	       :html-head-extra html-head
+	       :html-head-include-default-style nil)
+	 (list "docs"
+	       :base-extension "org"
+	       :base-directory "src/docs"
+	       :publishing-directory "public/docs"
+	       :publishing-function 'org-html-publish-to-html
 	       :makeindex t
 	       :section-numbers t
 	       :with-toc t
 	       :with-title t
 	       :html-doctype "html5"
 	       :html-html5-fancy t
-	       :html-preamble content-preamble
-	       :html-postamble nil
+	       :html-preamble main-preamble
+	       :html-postamble docs-postamble
 	       :html-head-extra html-head
 	       :html-head-include-default-style nil)
+	 (list "css"
+	       :base-extension "css"
+	       :base-directory "src/css"
+	       :publishing-directory "public/css"
+	       :publishing-function 'org-publish-attachment)
 	 (list "all"
-	       :components (list "content")))))
+	       :components (list "main" "docs" "css")))))
