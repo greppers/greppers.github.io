@@ -10,10 +10,8 @@ This project and the applications that compose it aim to address the
 
 Sustainable Development is a call to action, and an active program to
 end poverty, protect the planet and ensure prosperity and peace for
-all people.
-
-It seeks to combine the power of all nations, in all domains, to
-alleviate the issues we currently face.
+all people, through the combination of manpower of all nations, in all
+domains, to hopefully alleviate the issues we currently face.
 
 This project seeks to integrate cloud technologies with the
 educational system, augmenting it from all aspects.
@@ -23,26 +21,27 @@ educational system, augmenting it from all aspects.
 ** Functional requirements
 
 #+ATTR_LATEX: :environment longtable :align |p{3cm}|p{7cm}|p{2cm}|
-| Requirement                                    | Description                                                                                                                                                                                            | Candidates                                      |
-|------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------|
-| Orchestration capabilities                     | The cloud infrastructure should rely on orchestration tools such as Kubernetes, Docker Compose, Vagrant, Ansible to automate entire workflows.                                                         | Kubernetes, Docker Compose, Ansible, Vagrant    |
-| Multiple-hypervisor support                    | The cloud infrastructure should support multiple hypervisors                                                                                                                                           | KVM, VMware, Xen, Hyper-V                       |
-| Storage Redudancy                              | The cloud infrastructure must utilize intelligent storage virtualization systems to be able to recover from any storage failures should they ever occur                                                | RAID, LVM                                       |
-| Dashboard                                      | The cloud infrastructure must allow users to manage their virtual machines through easy-to-use dashboards                                                                                              | Ovirt, Proxmox                                  |
-| Network-attached storage support               | The cloud infrastructure must provide its users with the ability to create, manage and access network-attached storage servers                                                                         | NFS, SAMBA                                      |
-| Service discovery and load balancing           | The cloud infrastructure must utilize load balancing software and techniques to distribute load across its underlying virtual machine clusters                                                         | Traefik, HAProxy, NGINX                         |
-| Installable via configuration management tools | The cloud infrastructure should be configured through and deployed by an automation and configuration declaration utility                                                                              | Ansible                                         |
-| Self-healing capabilities                      | The cloud infrastructure should be able to automatically recover from and resolve certain issues                                                                                         | Kubernetes                                      |
-| Provide deployment patterns and templates      | The cloud infrastructure should provide a number of virtual machine templates to quicky get up and running                                                                                             | Proxmox (GUI), qemu-img with virt-sysprep (CLI) |
+| Requirement                                    | Description                                                                                                                                               | Candidates                                      |
+|------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------|
+| Orchestration capabilities                     | The cloud infrastructure should use orchestration tools to allow for the automation of entire workflows                                                   | Kubernetes, Docker Compose, Vagrant             |
+| Multiple-hypervisor support                    | The cloud infrastructure should support multiple hypervisors                                                                                              | KVM, VMware, Xen, Hyper-V                       |
+| Storage Redudancy                              | The cloud infrastructure should utilize intelligent storage virtualization systems to be able to recover from any storage failures should they ever occur | RAID, LVM                                       |
+| Dashboard                                      | The cloud infrastructure should allow users to manage their virtual machines through easy-to-use dashboards                                               | Ovirt, Proxmox                                  |
+| Network-attached storage support               | The cloud infrastructure should provide users with the ability to create, manage and access network-attached storage servers                              | NFS, SAMBA                                      |
+| Service discovery and load balancing           | The cloud infrastructure should utilize load balancing software and techniques to distribute load across its underlying virtual machine clusters          | Traefik, HAProxy, NGINX                         |
+| Installable via configuration management tools | The cloud infrastructure should be configured through and deployed by an automation and configuration declaration utility                                 | Ansible                                         |
+| Self-healing capabilities                      | The cloud infrastructure should be able to automatically recover from and resolve certain issues                                                          | Kubernetes                                      |
+| Provide deployment patterns and templates      | The cloud infrastructure should provide a number of virtual machine templates to quicky get up and running                                                | Proxmox (GUI), qemu-img with virt-sysprep (CLI) |
 
 ** Non-functional requirements
 
-| Requirement                         | Description                                                                                                                                                                                            | Candidates     |
-|-------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------|
-| Multi-tenancy architecture          | The cloud infrastructure should share its resources across all users while ensuring the isolation of said resources                                                                         |                |
-| Modularity                          | The cloud infrastructure should be based on a modular architecture such that its base components can be re-used across the platform which will consequently ease the debugging and development process |                |
-| Open source model                   | The cloud infrastructure should be fully open source, this property alone welcomes new contributors which can help the project deliver its services to a much wider audience                           |                |
-| Support different deployment models | The cloud infrastructure should support both private and hybrid deployments                                                                                                                            |                |
-| Documentation and standardization   | The cloud infrastructure should be well documented and should have concise guidelines that seek to set standards for building massive and scalable clouds                                              |                |
-| High Availability                   | The cloud infrastructure should seek to be available as much as possible to its users, and as such, its uptime must never be <98%                                                                      |                |
-| Cross-distribution                  | The cloud infrastructure's orchestration system should work across all Linux distributions                                                                                                             | Docker, Podman |
+#+ATTR_LATEX: :environment longtable :align |p{3cm}|p{7cm}|p{2cm}|
+| Requirement                               | Description                                                                                                                                                                                            | Candidates                                      |
+|-------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------|
+| Multi-tenancy architecture                | The cloud infrastructure should share its resources across all users while ensuring the isolation of said resources                                                                                    |                                                 |
+| Modularity                                | The cloud infrastructure should be based on a modular architecture such that its base components can be re-used across the platform which will consequently ease the debugging and development process |                                                 |
+| Open source model                         | The cloud infrastructure should be fully open source, this property alone welcomes new contributors which can help the project deliver its services to a much wider audience                           |                                                 |
+| Support different deployment models       | The cloud infrastructure should support both private and hybrid deployments                                                                                                                            |                                                 |
+| Documentation and standardization         | The cloud infrastructure should be well documented and should have concise guidelines and standards for building massive and scalable clouds                                                           |                                                 |
+| High Availability                         | The cloud infrastructure should seek to be available as much as possible to its users                                                                                                                  |                                                 |
+| Cross-distribution orchestration          | The cloud infrastructure's orchestration system should work across all Linux distributions                                                                                                             | Docker, Podman                                  |
