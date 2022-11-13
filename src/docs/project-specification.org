@@ -5,29 +5,18 @@
 
 * Abstract
 
-This project and the applications that compose it should provide
-unlimited access to our in-house cloud infrastructure. 
+This project and the applications that compose it aim to address the
+/Quality Education/ goal from the United Nations' 2030 Agenda.
 
-The application we intend to develop should follow a software as a
-service (SaaS) model targeting one important resolution from the
-United Nation's 2030 Agenda.
+Sustainable Development is a call to action, and an active program to
+end poverty, protect the planet and ensure prosperity and peace for
+all people.
 
-As such, access to the platform should be seamless and work on any
-device, it should not require any maintenance nor installation from
-the user. The application should also be able to handle large amounts
-of traffic and the infrastructure should scale vertically and
-horizontally as needed.
+It seeks to combine the power of all nations, in all domains, to
+alleviate the issues we currently face.
 
-The infrastructure should imperatively follow an open source model and
-utilize open source applications, offering orchestration capabilities
-similar to those of the Microsoft Azure platform. Though, it should
-not make any assumptions or depend on any specific hardware
-configuration.
-
-In case of any hardware failures, the pre-defined disaster recovery
-plan should take effect, and in turn, the chances of a data
-discrepancy or storage disk failure affecting the underlying
-infrastructure dramatically decrease.
+This project seeks to integrate cloud technologies with the
+educational system, augmenting it from all aspects.
 
 * Project Specification
 
@@ -43,14 +32,14 @@ infrastructure dramatically decrease.
 | Network-attached storage support               | The cloud infrastructure must provide its users with the ability to create, manage and access network-attached storage servers                                                                         | NFS, SAMBA                                      |
 | Service discovery and load balancing           | The cloud infrastructure must utilize load balancing software and techniques to distribute load across its underlying virtual machine clusters                                                         | Traefik, HAProxy, NGINX                         |
 | Installable via configuration management tools | The cloud infrastructure should be configured through and deployed by an automation and configuration declaration utility                                                                              | Ansible                                         |
-| Self-healing capabilities                      | The cloud infrastructure should be able to automatically resolve certain issues                                                                                                                        | Kubernetes                                      |
+| Self-healing capabilities                      | The cloud infrastructure should be able to automatically recover from and resolve certain issues                                                                                         | Kubernetes                                      |
 | Provide deployment patterns and templates      | The cloud infrastructure should provide a number of virtual machine templates to quicky get up and running                                                                                             | Proxmox (GUI), qemu-img with virt-sysprep (CLI) |
 
 ** Non-functional requirements
 
 | Requirement                         | Description                                                                                                                                                                                            | Candidates     |
 |-------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------|
-| Multi-tenancy architecture          | The cloud infrastructure must support multiple concurrent users                                                                                                                                        |                |
+| Multi-tenancy architecture          | The cloud infrastructure should share its resources across all users while ensuring the isolation of said resources                                                                         |                |
 | Modularity                          | The cloud infrastructure should be based on a modular architecture such that its base components can be re-used across the platform which will consequently ease the debugging and development process |                |
 | Open source model                   | The cloud infrastructure should be fully open source, this property alone welcomes new contributors which can help the project deliver its services to a much wider audience                           |                |
 | Support different deployment models | The cloud infrastructure should support both private and hybrid deployments                                                                                                                            |                |
