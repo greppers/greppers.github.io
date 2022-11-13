@@ -1,7 +1,6 @@
 #+TITLE: Transforming Education with Sustainable Development
-#+AUTHOR: greppers
-#+HTML_HEAD: <link rel="stylesheet" href="https://grtcdr.tn/stylesheets/main.css">
-#+OPTIONS: html-postamble:nil
+#+INDEX: Specification
+#+AUTHOR: Greppers
 
 #+LATEX_HEADER: \usepackage{parskip}
 
@@ -36,10 +35,10 @@ infrastructure dramatically decrease.
 ** Cloud infrastructure
 *** Functional requirements
 
-- *What the system must do, and what its features are*
-
+#+ATTR_LATEX: :environment longtable :align |p{3cm}|p{7cm}|p{2cm}|
 | Requirement                      | Description                                                                                                                                                                                            | Candidates                                   |
 |----------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------------------|
+|                                  | <30>                                                                                                                                                                                                   |                                              |
 | Multi-tenancy architecture       | The cloud infrastructure must support multiple concurrent users                                                                                                                                        | -                                            |
 | Modularity                       | The cloud infrastructure should be based on a modular architecture such that its base components can be re-used across the platform which will consequently ease the debugging and development process | -                                            |
 | Orchestration capabilities       | The cloud infrastructure must rely on orchestration tools such as Kubernetes, Docker Compose, Vagrant, Ansible to automate entire workflows.                                                           | Kubernetes, Docker Compose, Ansible, Vagrant |
@@ -53,6 +52,7 @@ infrastructure dramatically decrease.
 
 | Requirement                         | Description                                                                                                                                                                   |
 |-------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|                                     | <30>                                                                                                                                                                          |
 | Open source model                   | The cloud infrastructure should be fully open source, this property alone welcomes new contributors which can help the project deliver its services to a much bigger audience |
 | Support different deployment models | The cloud infrastructure should support both private and hybrid deployments                                                                                                   |
 | Documentation and standardization   | The cloud infrastructure should be well documented and should have concise guidelines that seek to set standards for building massive and scalable clouds                     |
@@ -83,11 +83,14 @@ should satisfy the following needs:
 |-----------------------------------------------------+-------------------------------------------------|
 | Work across all Linux distribution                  | Docker, Podman                                  |
 | Installable via configuration management tools      | Ansible                                         |
-| Facilitate declarative configuration and automation | Nix                                             |
+| Facilitate declarative configuration and automation | Nix[fn:2]                                        |
 | Service discovery and load balancing                | Traefik                                         |
 | Self-healing capabilities                           | Kubernetes                                      |
 | Provide deployment patterns and templates           | Proxmox (GUI), qemu-img with virt-sysprep (CLI) |
   
 * Footnotes
 
-[fn:1] https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=8684951 
+[fn:1] A Fast Approach of Provisioning Virtual Machines by Using Image
+Content Similarity in Cloud: https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=8684951
+[fn:2] Automating System Tests Using Declarative Virtual Machines:
+https://edolstra.github.io/pubs/decvms-issre2010-submitted.pdf
