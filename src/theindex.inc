@@ -1,2 +1,2 @@
 * S
-  - [[file:project-specification.org][Specification]]
+  - [[file:docs/project-specification.org][Specification]]

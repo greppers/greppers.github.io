@@ -1,6 +1,4 @@
-#+TITLE: Greppers
-#+SUBTITLE: Welcome to greppers' home page, you can use the index below to browse the different documents of this website.
-#+OPTIONS: toc:nil num:nil
+#+TITLE: Index
 
 #+INCLUDE: "theindex.inc"
 

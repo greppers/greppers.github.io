@@ -84,10 +84,12 @@
 	       :base-directory "src"
 	       :publishing-directory "public"
 	       :publishing-function 'org-html-publish-to-html
+	       :exclude (regexp-opt '("theindex.org"))
+	       :recursive t
+	       :makeindex t
 	       :section-numbers t
 	       :with-toc t
 	       :with-title t
-	       :makeindex t
 	       :html-doctype "html5"
 	       :html-html5-fancy t
 	       :html-preamble content-preamble

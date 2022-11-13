@@ -31,15 +31,12 @@ jobs:
       - name: Install Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: 16
+          node-version: 18
 
       - name: Setup Emacs
         uses: purcell/setup-emacs@master
         with:
           version: snapshot
-
-      - name: Setup cache
-        run: mkdir -p .timestamps/grtcdr.tn
 
       - name: Build website
         run: make
