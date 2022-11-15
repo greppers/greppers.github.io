@@ -14,24 +14,65 @@ all people, through the combination of manpower of all nations, in all
 domains, to hopefully alleviate the issues we currently face.
 
 This project seeks to integrate cloud technologies with the
-educational system, augmenting it from all aspects.
+educational system by providing a platform dedicated to the journaling
+of open scientific documents, ranging from research papers to books
+and literature.
 
 * Project Specification
 
 ** Functional requirements
 
 #+ATTR_LATEX: :environment longtable :align |p{3cm}|p{7cm}|p{2cm}|
-| Requirement                                    | Description                                                                                                                                               | Candidates                                      |
-|------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------|
-| Orchestration capabilities                     | The cloud infrastructure should use orchestration tools to allow for the automation of entire workflows                                                   | Kubernetes, Docker Compose, Vagrant             |
-| Multiple-hypervisor support                    | The cloud infrastructure should support multiple hypervisors                                                                                              | KVM, VMware, Xen, Hyper-V                       |
-| Storage Redudancy                              | The cloud infrastructure should utilize intelligent storage virtualization systems to be able to recover from any storage failures should they ever occur | RAID, LVM                                       |
-| Dashboard                                      | The cloud infrastructure should allow users to manage their virtual machines through easy-to-use dashboards                                               | Ovirt, Proxmox                                  |
-| Network-attached storage support               | The cloud infrastructure should provide users with the ability to create, manage and access network-attached storage servers                              | NFS, SAMBA                                      |
-| Service discovery and load balancing           | The cloud infrastructure should utilize load balancing software and techniques to distribute load across its underlying virtual machine clusters          | Traefik, HAProxy, NGINX                         |
-| Installable via configuration management tools | The cloud infrastructure should be configured through and deployed by an automation and configuration declaration utility                                 | Ansible                                         |
-| Self-healing capabilities                      | The cloud infrastructure should be able to automatically recover from and resolve certain issues                                                          | Kubernetes                                      |
-| Provide deployment patterns and templates      | The cloud infrastructure should provide a number of virtual machine templates to quicky get up and running                                                | Proxmox (GUI), qemu-img with virt-sysprep (CLI) |
+| Requirement                                    | Description                                                                                                                                               | Candidates                                                    |
+|------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------|
+| [[#oc][Orchestration capabilities]]                     | The cloud infrastructure should use orchestration tools to allow for the automation of entire workflows                                                   | Kubernetes, Docker Compose, Podman Compose, Vagrant, Kubevirt |
+| Storage Redudancy                              | The cloud infrastructure should utilize intelligent storage virtualization systems to be able to recover from any storage failures should they ever occur | RAID, LVM                                                     |
+| Dashboard                                      | The cloud infrastructure should allow users to manage their virtual machines through easy-to-use dashboards                                               | Ovirt, Proxmox                                                |
+| Network-attached storage support               | The cloud infrastructure should provide users with the ability to create, manage and access network-attached storage servers                              | NFS, SAMBA                                                    |
+| Service discovery and load balancing           | The cloud infrastructure should utilize load balancing software and techniques to distribute load across its underlying virtual machine clusters          | Traefik, HAProxy, NGINX                                       |
+| Installable via configuration management tools | The cloud infrastructure should be configured through and deployed by an automation and configuration declaration utility                                 | Ansible                                                       |
+| Self-healing capabilities                      | The cloud infrastructure should be able to automatically recover from and resolve certain issues                                                          | Kubernetes                                                    |
+| Multiple-hypervisor support                    | The cloud infrastructure should support multiple hypervisors                                                                                              | KVM, VMware, Xen, Hyper-V                                     |
+| [[#pdpt][Provide deployment patterns and templates]]      | The cloud infrastructure should provide a number of virtual machine templates to quicky get up and running                                                | Proxmox (GUI), qemu-img with virt-sysprep (CLI)               |
+
+*** Providing deployment patterns and templates
+:PROPERTIES:
+:CUSTOM_ID: pdpt
+:END:
+
+Our virtual machine orchestrator of choice implements a templating
+system.
+
+Vagrant lets us create base "boxes" which we can use as the basis of
+any new virtual machines.
+
+*** Orchestration capabilities
+:PROPERTIES:
+:CUSTOM_ID: oc
+:END:
+
+**** Virtual machines
+
+Vagrant seems like a more established, and much more developed
+platform:
+- The configuration file (called =Vagrantfile=) is a Ruby DSL, it can
+  thus utilize all of Ruby's functions and libraries, which is a
+  testament to its extensibility.
+- Stable plugin system and well-established internal APIs.
+- Vagrant Cloud provides a platform for hosting predefined boxes
+  (images).
+- Provides much more than standard orchestration capabilities 
+
+Kubevirt:
+- Utilizes the same tools and interfaces of Kubernetes' standard
+  tools.
+- Not very extensible.
+
+**** Containers
+
+Orchestrating containers is an entirely different /ordeal/, we'll have
+to pick between Podman and Docker's Compose utilities, both of which
+satisfy the same need.
 
 ** Non-functional requirements
 
