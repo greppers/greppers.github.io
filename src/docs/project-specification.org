@@ -33,7 +33,7 @@ and literature.
 | Installable via configuration management tools | The cloud infrastructure should be configured through and deployed by an automation and configuration declaration utility                                 | Ansible                                                 |
 | Self-healing capabilities                      | The cloud infrastructure should be able to automatically recover from and resolve certain issues                                                          | Kubernetes                                              |
 | Multiple-hypervisor support                    | The cloud infrastructure should support multiple hypervisors                                                                                              | KVM, VMware, Xen, Hyper-V                               |
-| [[#pdpt][Provide deployment patterns and templates]]      | The cloud infrastructure should provide a number of virtual machine templates to quicky get up and running                                                | Proxmox (GUI), qemu-img with virt-sysprep (CLI)         |
+| [[#pdpt][Provide deployment patterns and templates]]      | The cloud infrastructure should provide a number of virtual machine templates to quicky get up and running                                                | Vagrant                                                 |
 
 *** Providing deployment patterns and templates
 :PROPERTIES:
@@ -97,12 +97,16 @@ Kubernetes:
   scheduling processes
 - Suffers from a high barrier to entry
 
-**** Service discovery and load balancing
+***  Service discovery and load balancing
 :PROPERTIES:
 :CUSTOM_ID: sdlb
 :END:
 
-Kubernetes service discovery is quite limited
+While Docker Swarm comes with its own load balancers and service
+discovery features, Kubernetes does not.
+
+We may choose to use a dedicated load balancer and service discovery
+tool like Traefik.
 
 ** Non-functional requirements
 
