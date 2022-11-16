@@ -22,101 +22,55 @@ and literature.
 
 ** Functional requirements
 
-#+ATTR_LATEX: :environment longtable :align |p{3cm}|p{7cm}|p{2cm}|
-| Requirement                                    | Description                                                                                                                                               | Candidates                                              |
-|------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------|
-| [[#oc][Orchestration capabilities]]                     | The cloud infrastructure should use orchestration tools to allow for the automation of entire workflows                                                   | Vagrant (virtualization), Kubernetes (containerization) |
-| Storage Redudancy                              | The cloud infrastructure should utilize intelligent storage virtualization systems to be able to recover from any storage failures should they ever occur | RAID with LVM                                           |
-| Dashboard                                      | The cloud infrastructure should allow users to manage their virtual machines through easy-to-use dashboards                                               | Ovirt, Proxmox                                          |
-| Network-attached storage support               | The cloud infrastructure should provide users with the ability to create, manage and access network-attached storage servers                              | NFS, SAMBA                                              |
-| [[#sdlb][Service discovery and load balancing]]           | The cloud infrastructure should utilize load balancing software and techniques to distribute load across its underlying virtual machine clusters          | Traefik, Docker Swarm                                   |
-| Installable via configuration management tools | The cloud infrastructure should be configured through and deployed by an automation and configuration declaration utility                                 | Ansible                                                 |
-| Self-healing capabilities                      | The cloud infrastructure should be able to automatically recover from and resolve certain issues                                                          | Kubernetes                                              |
-| Multiple-hypervisor support                    | The cloud infrastructure should support multiple hypervisors                                                                                              | KVM, VMware, Xen, Hyper-V                               |
-| [[#pdpt][Provide deployment patterns and templates]]      | The cloud infrastructure should provide a number of virtual machine templates to quicky get up and running                                                | Vagrant                                                 |
+*** Infrastructure
 
-*** Providing deployment patterns and templates
-:PROPERTIES:
-:CUSTOM_ID: pdpt
-:END:
+#+ATTR_LATEX: :environment longtable :align |p{4cm}|
+| Requirement                                                      | OpenStack | CloudStack | OpenNebula | Terraform |
+|------------------------------------------------------------------+-----------+------------+------------+-----------|
+| Open source                                                      | ✓         | ✓          | ✓          |           |
+| Modular/multi-tenant architecture                                | ✓         | ✓          | ✓          |           |
+| Provides orchestration capabilities                              | ✓         | ✓          | ✓          |           |
+| Supports various hypervisors                                     | ✓         | ✓          |            |           |
+| Supports hybrid and private deployments                          | ✓         | ✓          | ✓          |           |
+| Leverages commodity hardware                                     | ✓         |            | ✓          |           |
+| Easily add storage capacity                                      | ✓         | ✓          |            |           |
+| Horizontal and vertical scaling of storage                       | ✓         | ✓          |            |           |
+| Self-healing and data redundancy                                 | ✓         | ✓          |            |           |
+| Manageable through a centralized dashboard                       |           | ✓          |            |           |
+| Provide standards for building open and scalable clouds          |           | ✓          |            |           |
+| Backup and archive large volumes of data with linear performance |           | ✓          |            |           |
 
-Vagrant lets us create "base boxes" which we can use as the basis or
-recipe of new virtual machines. These configurations can range from a
-few tweaks to the predefined boxes, to something entirely custom, such
-as a virtual machine image packing a specific set of applications,
-e.g. =lighttpd=, =postgresql=, along with preset compute, storage and
-network properties.
+*** Virtualization
 
-*** Orchestration capabilities
-:PROPERTIES:
-:CUSTOM_ID: oc
-:END:
+#+ATTR_LATEX: :environment longtable :align |p{4cm}|
+| Requirement                                                                  | KVM | Hyper-V | vSphere |
+|------------------------------------------------------------------------------+-----+---------+---------|
+| Full-supported by and compatible with the infrastructure management solution | ✓   |         |         |
+| Can use a wide variety of certified Linux-supported hardware platforms       | ✓   | ✓       |         |
+| Supports live migration                                                      | ✓   | ✓       |         |
+| Proportional scaling in terms of user traffic and workload                   |     |         |         |
 
-**** Virtual machines
+*** Orchestration
 
-Vagrant is an established, streamlined and extensible platform for
-building, configuring, managing and orchestrating virtual machines.
+#+ATTR_LATEX: :environment longtable :align |p{4cm}|
+| Requirement                                                        | Kubernetes | Docker Swarm |
+|--------------------------------------------------------------------+------------+--------------|
+| Compatible with any Linux distribution                             |            |              |
+| Automatic installation via configuration management tools          |            |              |
+| Standard, established and available on a large number of platforms |            |              |
+| Facilitate declarative configuration and automation                |            |              |
+| Provide deployment patterns and templates                          |            |              |
+| Ensure self-healing                                                |            |              |
+| Provide service discovery and load balancing                       |            |              |
 
-A typical Vagrant workflow goes as follows:
-1. Prepare your own "base box" or pick an image from the registry
-   (Vagrant Cloud)
-2. Configure the different properties of the virtual machine through
-   =Vagrantfile=.
-3. Provision the virtual machine
-4. Start and connect to it via SSH
+*** Automation
 
-Should we need to create multiple virtual machines under the same
-umbrella, we can utilize Vagrant's multi-machine environment. A
-=Vagrantfile= that contains a single virtual machine definition could
-now be extended to contain however many we need.
-
-Vagrant also makes no assumptions over the provider with which it
-integrates, it can work with VirtualBox, Hyper-V, VMware as well as
-libvirt.
-
-Vagrant's first-class [[https://developer.hashicorp.com/vagrant/docs/plugins][support for plugins]] means that we can
-confidently extend and augment the base application with our own
-features, automate tasks and workflows, too.
-
-**** Containers
-
-There's a lot more choice when it comes to picking a container
-orchestration solution, but we'll only focus on the two major players,
-Kubernetes and Docker Swarm.
-
-Docker Swarm:
-- Simple to set up
-- Integrates seamlessly with the existing Docker CLI
-- Provides automated load balancing between nodes
-- Limited in functionality
-
-Kubernetes:
-- Automatically scales proportionally to our workloads
-- Built-in monitoring utilities
-- Fine-grained control over every aspect of the orchestration and
-  scheduling processes
-- Suffers from a high barrier to entry
-
-***  Service discovery and load balancing
-:PROPERTIES:
-:CUSTOM_ID: sdlb
-:END:
-
-While Docker Swarm comes with its own load balancers and service
-discovery features, Kubernetes does not.
-
-We may choose to use a dedicated load balancer and service discovery
-tool like Traefik.
-
-** Non-functional requirements
-
-#+ATTR_LATEX: :environment longtable :align |p{3cm}|p{7cm}|p{2cm}|
-| Requirement                               | Description                                                                                                                                                                                            | Candidates                                      |
-|-------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------|
-| Multi-tenancy architecture                | The cloud infrastructure should share its resources across all users while ensuring the isolation of said resources                                                                                    |                                                 |
-| Modularity                                | The cloud infrastructure should be based on a modular architecture such that its base components can be re-used across the platform which will consequently ease the debugging and development process |                                                 |
-| Open source model                         | The cloud infrastructure should be fully open source, this property alone welcomes new contributors which can help the project deliver its services to a much wider audience                           |                                                 |
-| Support different deployment models       | The cloud infrastructure should support both private and hybrid deployments                                                                                                                            |                                                 |
-| Documentation and standardization         | The cloud infrastructure should be well documented and should have concise guidelines and standards for building massive and scalable clouds                                                           |                                                 |
-| High Availability                         | The cloud infrastructure should seek to be available as much as possible to its users                                                                                                                  |                                                 |
-| Cross-distribution orchestration          | The cloud infrastructure's orchestration system should work across all Linux distributions                                                                                                             | Docker, Podman                                  |
+#+ATTR_LATEX: :environment longtable :align |p{4cm}|
+| Requirement                                        | Ansible | Puppet |
+|----------------------------------------------------+---------+--------|
+| Open source                                        |         |        |
+| Support Windows, Linux and other UNIX-like systems |         |        |
+| Agentless                                          |         |        |
+| Provisioning and configuration management          |         |        |
+| Application-deployment features                    |         |        |
+| Support standard communication protocols, e.g. SSH |         |        |
