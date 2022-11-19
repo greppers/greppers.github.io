@@ -96,11 +96,11 @@ means that Kubernetes is unsurprisingly more fit for the job.
 ** Automation
 
 #+ATTR_LATEX: :environment longtable :align |p{4cm}|
-| Requirement                                        | Ansible | Puppet |
-|----------------------------------------------------+---------+--------|
-| Open source software                               |         |        |
-| Support Windows, Linux and other UNIX-like systems |         |        |
-| Agentless                                          |         |        |
-| Provisioning and configuration management          |         |        |
-| Application-deployment features                    |         |        |
-| Support standard communication protocols, e.g. SSH |         |        |
+| Requirement                                        | Ansible | Puppet Bolt | Chef |
+|----------------------------------------------------+---------+-------------+------|
+| Open source software                               | ✓       | ✓           |      |
+| Support Windows, Linux and other UNIX-like systems | ✓       | ✓           |      |
+| Agentless                                          | ✓       | ✓           |      |
+| Provisioning and configuration management          | ✓       | ✓           |      |
+| Application-deployment features                    | ✓       | ✓           |      |
+| Support standard communication protocols, e.g. SSH | ✓       | ✓           |      |
