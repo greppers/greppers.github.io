@@ -104,3 +104,8 @@ means that Kubernetes is unsurprisingly more fit for the job.
 | Provisioning and configuration management          | ✓       | ✓      | ✓    |
 | Application-deployment features                    | ✓       | ✓      | ✓    |
 | Support standard communication protocols, e.g. SSH | ✓       |        |      |
+
+Compared to its alternatives, Ansible meets every one of our
+requirements - it's an agentless, cross-platform and event-driven
+automation tool that integrates perfectly with the rest of our
+infrastructure.
