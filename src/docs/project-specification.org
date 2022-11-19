@@ -47,8 +47,9 @@ other. While this architecture certainly has its advantages, most
 notably in the installation and maintenance phases, it does not meet
 the requirements of the project.
 
-OpenNebula's hypervisor support is limited to KVM and VMWare ESXi, and
-while it is open source software.
+OpenNebula's hypervisor support is limited to KVM and VMWare ESXi,
+which doesn't quite compare to the [[https://docs.openstack.org/nova/queens/admin/configuration/hypervisors.html][extensive list of hypervisors that
+OpenStack supports]].
 
 That leaves us with OpenStack, the only cloud infrastructure software
 that meets all of our requirements.
