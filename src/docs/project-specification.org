@@ -18,57 +18,87 @@ educational system by providing a platform dedicated to the journaling
 of open scientific documents, ranging from research papers to books
 and literature.
 
-* Project Specification
+* Technical requirements
 
-** Functional requirements
-
-*** Infrastructure
+** Infrastructure
 
 #+ATTR_LATEX: :environment longtable :align |p{4cm}|
-| Requirement                                                      | OpenStack | CloudStack | OpenNebula | Terraform |
-|------------------------------------------------------------------+-----------+------------+------------+-----------|
-| Open source                                                      | ✓         | ✓          | ✓          |           |
-| Modular/multi-tenant architecture                                | ✓         | ✓          | ✓          |           |
-| Provides orchestration capabilities                              | ✓         | ✓          | ✓          |           |
-| Supports various hypervisors                                     | ✓         | ✓          |            |           |
-| Supports hybrid and private deployments                          | ✓         | ✓          | ✓          |           |
-| Leverages commodity hardware                                     | ✓         |            | ✓          |           |
-| Easily add storage capacity                                      | ✓         | ✓          |            |           |
-| Horizontal and vertical scaling of storage                       | ✓         | ✓          |            |           |
-| Self-healing and data redundancy                                 | ✓         | ✓          |            |           |
-| Manageable through a centralized dashboard                       |           | ✓          |            |           |
-| Provide standards for building open and scalable clouds          |           | ✓          |            |           |
-| Backup and archive large volumes of data with linear performance |           | ✓          |            |           |
+| Requirement                                                      | OpenStack | CloudStack | OpenNebula |
+|------------------------------------------------------------------+-----------+------------+------------|
+| Open source software                                             | ✓         | ✓          | ✓          |
+| Modular multi-tenant architecture                                | ✓         | /          | ✓          |
+| Provides orchestration capabilities                              | ✓         | ✓          | ✓          |
+| Supports various hypervisors                                     | ✓         | ✓          | /          |
+| Supports hybrid and private deployments                          | ✓         | ✓          | ✓          |
+| Leverages commodity hardware                                     | ✓         | ✓          | ✓          |
+| Easily add storage capacity                                      | ✓         | ✓          | ✓          |
+| Horizontal and vertical scaling of storage                       | ✓         | ✓          | ✓          |
+| Self-healing and data redundancy                                 | ✓         | ✓          | ✓          |
+| Manageable through a centralized dashboard                       | ✓         | ✓          | ✓          |
+| Provide standards for building open and scalable clouds          | ✓         | ✓          | ✓          |
+| Backup and archive large volumes of data with linear performance | ✓         | ✓          | ✓          |
 
-*** Virtualization
+The three candidates fair quite well against each other, let's analyze
+some of the differences to be able to pick the right solution.
+
+CloudStack is a monolithic beast, every one of its core components
+(e.g. Storage, Compute, Monitoring, etc.) strongly depends on the
+other. While this architecture certainly has its advantages, most
+notably in the installation and maintenance phases, it does not meet
+the requirements of the project.
+
+OpenNebula's hypervisor support is limited to KVM and VMWare ESXi, and
+while it is open source software.
+
+That leaves us with OpenStack, the only cloud infrastructure software
+that meets all of our requirements.
+
+** Virtualization
 
 #+ATTR_LATEX: :environment longtable :align |p{4cm}|
-| Requirement                                                                  | KVM | Hyper-V | vSphere |
-|------------------------------------------------------------------------------+-----+---------+---------|
-| Full-supported by and compatible with the infrastructure management solution | ✓   |         |         |
-| Can use a wide variety of certified Linux-supported hardware platforms       | ✓   | ✓       |         |
-| Supports live migration                                                      | ✓   | ✓       |         |
-| Proportional scaling in terms of user traffic and workload                   |     |         |         |
+| Requirement                                                                  | KVM | Hyper-V | Xen |
+|------------------------------------------------------------------------------+-----+---------+-----|
+| Full-supported by and compatible with the infrastructure management solution | ✓   | ✓       | ✓   |
+| Can use a wide variety of certified Linux-supported hardware platforms       | ✓   |         | ✓   |
+| Supports live migration                                                      | ✓   | ✓       | ✓   |
+| Proportional scaling in terms of user traffic and workload                   | ✓   | ✓       | ✓   |
 
-*** Orchestration
+Cloud providers have been slowly but steadily moving away from
+Citrix's Xen, probably because KVM offers [[https://www.linode.com/blog/linode/linode-turns-12-heres-some-kvm/][better performance]] for less
+management overhead.
+
+KVM is clearly the more versatile hypervisor.
+
+** Orchestration
 
 #+ATTR_LATEX: :environment longtable :align |p{4cm}|
-| Requirement                                                        | Kubernetes | Docker Swarm |
-|--------------------------------------------------------------------+------------+--------------|
-| Compatible with any Linux distribution                             |            |              |
-| Automatic installation via configuration management tools          |            |              |
-| Standard, established and available on a large number of platforms |            |              |
-| Facilitate declarative configuration and automation                |            |              |
-| Provide deployment patterns and templates                          |            |              |
-| Ensure self-healing                                                |            |              |
-| Provide service discovery and load balancing                       |            |              |
+| Requirement                                               | Kubernetes | Docker Swarm |
+|-----------------------------------------------------------+------------+--------------|
+| Compatible with any Linux distribution                    | ✓          | ✓            |
+| Automatic installation via configuration management tools | ✓          | ✓            |
+| A standard and is available on a multitude of platforms   | ✓          | ✓            |
+| Facilitate declarative configuration and automation       | ✓          |              |
+| Provide deployment patterns and templates                 | ✓          | ✓            |
+| Ensure self-healing                                       | ✓          | ✓            |
+| Provide service discovery and load balancing              |            | ✓            |
 
-*** Automation
+The advantage that Docker Swarm has over Kubernetes is that it offers
+load balancing and service discovery features out of the box, while
+Kubernetes takes the lead in that it is more configurable and through
+automation tools like Ansible or Puppet.
+
+The scability of our cloud infrastructure strongly depends on the
+ability of the container orchestration tool of choice to be automated.
+
+Docker Swarm's automation features [[https://docs.ansible.com/ansible/latest/collections/community/docker/docker_swarm_module.html#id1][leave much to be desired]], which
+means that Kubernetes is unsurprisingly more fit for the job.
+
+** Automation
 
 #+ATTR_LATEX: :environment longtable :align |p{4cm}|
 | Requirement                                        | Ansible | Puppet |
 |----------------------------------------------------+---------+--------|
-| Open source                                        |         |        |
+| Open source software                               |         |        |
 | Support Windows, Linux and other UNIX-like systems |         |        |
 | Agentless                                          |         |        |
 | Provisioning and configuration management          |         |        |
