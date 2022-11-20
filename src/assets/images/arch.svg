@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentStyleType="text/css" height="322px" preserveAspectRatio="none" style="width:834px;height:322px;background:#00000000;" version="1.1" viewBox="0 0 834 322" width="834px" zoomAndPan="magnify"><defs/><g><!--MD5=[00d2b742c84eb79bfc1f61fe02e55ea0]
+cluster Compute--><g id="cluster_Compute"><rect fill="none" height="93" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:1.0;" width="86" x="196" y="7"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="64" x="207" y="23.9659">Compute</text></g><!--MD5=[2664f340305deca87bf468808e1f912f]
+cluster Web frontends--><g id="cluster_Web frontends"><rect fill="none" height="93" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:1.0;" width="119" x="359" y="124"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="103" x="367" y="140.9659">Web frontends</text></g><!--MD5=[b5c83c18bb1448d85568cbd62ac9d155]
+cluster Networking Services--><g id="cluster_Networking Services"><rect fill="none" height="93" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:1.0;" width="159" x="7" y="124"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="143" x="15" y="140.9659">Networking Services</text></g><!--MD5=[06389fa0076a54a8e66405a9bf52de8d]
+cluster Orchestration Services--><g id="cluster_Orchestration Services"><rect fill="none" height="93" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:1.0;" width="172" x="502" y="124"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="156" x="510" y="140.9659">Orchestration Services</text></g><!--MD5=[ed0e140d5b09b17e5d0b432e4e3b2021]
+cluster Shared Services--><g id="cluster_Shared Services"><rect fill="none" height="192" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:1.0;" width="124" x="190" y="124"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="108" x="198" y="140.9659">Shared Services</text></g><!--MD5=[c0ecd33503b6a706b503b97cd29b7690]
+cluster Storage Services--><g id="cluster_Storage Services"><rect fill="none" height="93" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:1.0;" width="130" x="698" y="124"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="114" x="706" y="140.9659">Storage Services</text></g><!--MD5=[6915411bec7515d299add6c570d24697]
+entity Nova--><g id="elem_Nova"><rect fill="#F1F1F1" height="39.0679" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="54" x="212" y="45"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="34" x="222" y="69.9659">Nova</text></g><!--MD5=[2454c6ea28b193a40926c3f0474702ca]
+entity Horizon--><g id="elem_Horizon"><rect fill="#F1F1F1" height="39.0679" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="72" x="378" y="162"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="52" x="388" y="186.9659">Horizon</text></g><!--MD5=[6cdfb2671d688b3a39e3f10254766fa1]
+entity Neutron--><g id="elem_Neutron"><rect fill="#F1F1F1" height="39.0679" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="76" x="74" y="162"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="56" x="84" y="186.9659">Neutron</text></g><!--MD5=[ce1d86443f850a1450f53f87c3db9b4f]
+entity Heat--><g id="elem_Heat"><rect fill="#F1F1F1" height="39.0679" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="51" x="518.5" y="162"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="31" x="528.5" y="186.9659">Heat</text></g><!--MD5=[76e7b5c806c45b86fec869c1b934a8f3]
+entity Glance--><g id="elem_Glance"><rect fill="#F1F1F1" height="39.0679" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="66" x="206" y="162"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="46" x="216" y="186.9659">Glance</text></g><!--MD5=[1efe831e7da3b9b03f2cb11fffcf97ab]
+entity Keystone--><g id="elem_Keystone"><rect fill="#F1F1F1" height="39.0679" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="81" x="206.5" y="261"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="61" x="216.5" y="285.9659">Keystone</text></g><!--MD5=[356069fef172b8079974352d24148513]
+entity Cinder--><g id="elem_Cinder"><rect fill="#F1F1F1" height="39.0679" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="65" x="714.5" y="162"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="45" x="724.5" y="186.9659">Cinder</text></g><!--MD5=[5bc53a3f9d541dcdfc5d97d06f2d81ee]
+link Neutron to Keystone--><g id="link_Neutron_Keystone"><path d="M138.35,201.43 C160.46,217.32 192.11,240.06 215.55,256.9 " fill="none" id="Neutron-to-Keystone" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#181818" points="219.49,259.73,214.4998,251.239,215.4242,256.8198,209.8434,257.7442,219.49,259.73" style="stroke:#181818;stroke-width:1.0;"/></g><!--MD5=[a7b0e3b7d9f751428f678b668a136c68]
+link Heat to Keystone--><g id="link_Heat_Keystone"><path d="M518.09,198.79 C503.28,207.54 484.11,217.95 466,225 C408.64,247.34 339.2,262.79 294.11,271.39 " fill="none" id="Heat-to-Keystone" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#181818" points="289.4,272.27,298.9862,274.5294,294.3131,271.3417,297.5008,266.6685,289.4,272.27" style="stroke:#181818;stroke-width:1.0;"/></g><!--MD5=[d9d867aa14761f81c4ca1e085109e68f]
+link Glance to Keystone--><g id="link_Glance_Keystone"><path d="M240.54,201.2 C241.79,216.27 243.54,237.6 244.91,254.19 " fill="none" id="Glance-to-Keystone" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#181818" points="245.31,259.02,248.5488,249.7189,244.8948,254.0373,240.5764,250.3833,245.31,259.02" style="stroke:#181818;stroke-width:1.0;"/></g><!--MD5=[4a10806ddbfd22ca423b401c2fef950a]
+link Cinder to Keystone--><g id="link_Cinder_Keystone"><path d="M714.23,192.17 C681.86,201.48 630.83,215.5 586,225 C482.62,246.9 359.85,264.6 294.12,273.42 " fill="none" id="Cinder-to-Keystone" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#181818" points="289.44,274.05,298.8876,276.8326,294.3966,273.3929,297.8363,268.902,289.44,274.05" style="stroke:#181818;stroke-width:1.0;"/></g><!--MD5=[6b107b4cb5d39a6a37705841b2073d80]
+link Horizon to Keystone--><g id="link_Horizon_Keystone"><path d="M387.45,201.37 C376.36,208.99 363.24,217.7 351,225 C331.81,236.46 309.97,248.1 291.28,257.66 " fill="none" id="Horizon-to-Keystone" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#181818" points="286.94,259.88,296.775,259.3574,291.3949,257.6097,293.1426,252.2296,286.94,259.88" style="stroke:#181818;stroke-width:1.0;"/></g><!--MD5=[f4d29be8dfa8e1098f1deb5c2ea2b0c1]
+link Nova to Keystone--><g id="link_Nova_Keystone"><path d="M265.5,84.4 C275.12,92.85 284.87,103.69 290,116 C308.65,160.71 305.88,179.23 290,225 C286.07,236.34 278.69,247.1 271.14,256.02 " fill="none" id="Nova-to-Keystone" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#181818" points="267.95,259.64,276.8946,255.5176,271.2496,255.8833,270.8839,250.2383,267.95,259.64" style="stroke:#181818;stroke-width:1.0;"/></g><!--MD5=[6a1a71659d0afc94c05fd5d23361f756]
+link Nova to Neutron--><g id="link_Nova_Neutron"><path d="M218.03,84.49 C195.84,104.59 160.82,136.3 137.16,157.72 " fill="none" id="Nova-to-Neutron" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#181818" points="133.7,160.85,143.059,157.7826,137.4094,157.4973,137.6947,151.8476,133.7,160.85" style="stroke:#181818;stroke-width:1.0;"/></g><!--MD5=[4078750707aea52797c9896a5dcf21f1]
+link Nova to Glance--><g id="link_Nova_Glance"><path d="M239,84.49 C239,103.92 239,134.19 239,155.55 " fill="none" id="Nova-to-Glance" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#181818" points="239,160.35,243,151.35,239,155.35,235,151.35,239,160.35" style="stroke:#181818;stroke-width:1.0;"/></g><!--MD5=[cc4615b6ad1d8da13f55fdf08d411989]
+@startuml
+skinparam BackgroundColor transparent
+skinparam componentStyle rectangle
+
+component "Compute" {
+	[Nova]
+}
+
+component "Web frontends" {
+	[Horizon]
+}
+
+component "Networking Services" {
+	[Neutron]
+}
+
+component "Orchestration Services" {
+	[Heat]
+}
+
+component "Shared Services" {
+	[Glance]
+	[Keystone]
+	[Neutron]
+}
+
+component "Storage Services" {
+	[Cinder]
+}
+
+[Neutron] - -> [Keystone]
+[Heat] - -> [Keystone]
+[Glance] - -> [Keystone]
+[Cinder] - -> [Keystone]
+[Horizon] - -> [Keystone]
+
+[Nova] - -> [Keystone]
+[Nova] - -> [Neutron]
+[Nova] - -> [Glance]
+@enduml
+
+PlantUML version 1.2022.7(Mon Aug 22 18:01:30 CET 2022)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Default Encoding: UTF-8
+Language: en
+Country: US
+--></g></svg>
