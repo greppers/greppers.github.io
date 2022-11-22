@@ -102,3 +102,18 @@ of open scientific documents.
 
 ** Physical Architecture
 
+*** Hardware Specs
+
+#+REVEAL_HTML: <div style="font-size: 0.7em;">
+| Member  | CPU             | RAM  | Storage                   |
+|---------+-----------------+------+---------------------------|
+| Essia   | Intel i5-9300H  | 16GB | 1TB (SSD)                 |
+| Khalil  | Intel i5-8250U  | 8GB  | 119GB (SSD) + 465GB (HDD) |
+| Mohamed | Intel i7-10870H | 16GB |                           |
+| Mokhtar | Intel i5-10300H | 16GB | 512GB (SSD)               |
+| Nayrouz | Intel i7-1065G7 | 8GB  | 512GB (SSD)               |
+| Oumayma | Intel i5-9300H  | 8GB  | 1TB (HDD)                 |
+| Taha    | Intel i5-8265U  | 20GB | 1TB (HDD) + 1TB (SSD)     |
+#+REVEAL_HTML: </div>
+
+*** Node Distribution
