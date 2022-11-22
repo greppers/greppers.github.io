@@ -124,31 +124,46 @@ skinparam BackgroundColor transparent
 skinparam componentStyle rectangle
 
 component Networking {
-	node Oumayma
+	node Oumayma #ff70a6
 }
 
 component "Compute 1" {
-	node Essia
+	node Essia   #2a9d8f
 }
 
 component "Compute 2" {
-	node Nayrouz
+	node Nayrouz #2a9d8f
 }
 
 component Controller {
-	node Khalil
-	node Taha
+	node Khalil  #f4a261
+	node Taha    #f4a261
 }
 
 component "Storage 1" {
-	node Mohamed
+	node Mohamed #8ecae6
 }
 
 component "Storage 2" {
-	node Farouk
+	node Farouk  #8ecae6
 }
 @enduml
 #+end_src
 
 #+RESULTS:
 [[file:../../assets/images/node-dist.svg]]
+
+
+* Useful tools
+
+** Vagrant
+
+#+HTML: <img src="/assets/images/vagrant.png" height="100">
+
+Build and maintain portable virtual software development environments.
+
+** Terraform
+
+#+HTML: <img src="/assets/images/terraform.png" height="100">
+
+Configure infrastructure through declarative configuration files.

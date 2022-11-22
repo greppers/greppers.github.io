@@ -5,40 +5,40 @@ cluster Compute 2--><g id="cluster_Compute 2"><rect fill="none" height="103" rx=
 cluster Controller--><g id="cluster_Controller"><rect fill="none" height="103" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:1.0;" width="219" x="455" y="7"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="70" x="529.5" y="23.9659">Controller</text></g><!--MD5=[29c1ab67d2e878075291253965276c88]
 cluster Storage 1--><g id="cluster_Storage 1"><rect fill="none" height="103" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:1.0;" width="140" x="698" y="7"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="66" x="735" y="23.9659">Storage 1</text></g><!--MD5=[4ff9c07f9e00948888b1c41f6582b31d]
 cluster Storage 2--><g id="cluster_Storage 2"><rect fill="none" height="103" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:1.0;" width="118" x="862" y="7"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="66" x="888" y="23.9659">Storage 2</text></g><!--MD5=[d151fd1a6b3b440b076d5c03370ea872]
-entity Oumayma--><g id="elem_Oumayma"><polygon fill="#F1F1F1" points="23.5,55,33.5,45,132.5,45,132.5,84.0679,122.5,94.0679,23.5,94.0679,23.5,55" style="stroke:#181818;stroke-width:0.5;"/><line style="stroke:#181818;stroke-width:0.5;" x1="122.5" x2="132.5" y1="55" y2="45"/><line style="stroke:#181818;stroke-width:0.5;" x1="23.5" x2="122.5" y1="55" y2="55"/><line style="stroke:#181818;stroke-width:0.5;" x1="122.5" x2="122.5" y1="55" y2="94.0679"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="69" x="38.5" y="79.9659">Oumayma</text></g><!--MD5=[acc35136daa1965b6fda1e1ebe04062a]
-entity Essia--><g id="elem_Essia"><polygon fill="#F1F1F1" points="189,55,199,45,263,45,263,84.0679,253,94.0679,189,94.0679,189,55" style="stroke:#181818;stroke-width:0.5;"/><line style="stroke:#181818;stroke-width:0.5;" x1="253" x2="263" y1="55" y2="45"/><line style="stroke:#181818;stroke-width:0.5;" x1="189" x2="253" y1="55" y2="55"/><line style="stroke:#181818;stroke-width:0.5;" x1="253" x2="253" y1="55" y2="94.0679"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="34" x="204" y="79.9659">Essia</text></g><!--MD5=[a12c0b578dda09f912d4fc7b594b71dd]
-entity Nayrouz--><g id="elem_Nayrouz"><polygon fill="#F1F1F1" points="319,55,329,45,415,45,415,84.0679,405,94.0679,319,94.0679,319,55" style="stroke:#181818;stroke-width:0.5;"/><line style="stroke:#181818;stroke-width:0.5;" x1="405" x2="415" y1="55" y2="45"/><line style="stroke:#181818;stroke-width:0.5;" x1="319" x2="405" y1="55" y2="55"/><line style="stroke:#181818;stroke-width:0.5;" x1="405" x2="405" y1="55" y2="94.0679"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="56" x="334" y="79.9659">Nayrouz</text></g><!--MD5=[34acac307c107791763ddd5829fbdde4]
-entity Khalil--><g id="elem_Khalil"><polygon fill="#F1F1F1" points="580,55,590,45,658,45,658,84.0679,648,94.0679,580,94.0679,580,55" style="stroke:#181818;stroke-width:0.5;"/><line style="stroke:#181818;stroke-width:0.5;" x1="648" x2="658" y1="55" y2="45"/><line style="stroke:#181818;stroke-width:0.5;" x1="580" x2="648" y1="55" y2="55"/><line style="stroke:#181818;stroke-width:0.5;" x1="648" x2="648" y1="55" y2="94.0679"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="38" x="595" y="79.9659">Khalil</text></g><!--MD5=[cd2a98d820da32f935bb956895344a13]
-entity Taha--><g id="elem_Taha"><polygon fill="#F1F1F1" points="471.5,55,481.5,45,544.5,45,544.5,84.0679,534.5,94.0679,471.5,94.0679,471.5,55" style="stroke:#181818;stroke-width:0.5;"/><line style="stroke:#181818;stroke-width:0.5;" x1="534.5" x2="544.5" y1="55" y2="45"/><line style="stroke:#181818;stroke-width:0.5;" x1="471.5" x2="534.5" y1="55" y2="55"/><line style="stroke:#181818;stroke-width:0.5;" x1="534.5" x2="534.5" y1="55" y2="94.0679"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="33" x="486.5" y="79.9659">Taha</text></g><!--MD5=[b01fb5bd1ff74523e26e164773e0f645]
-entity Mohamed--><g id="elem_Mohamed"><polygon fill="#F1F1F1" points="714,55,724,45,822,45,822,84.0679,812,94.0679,714,94.0679,714,55" style="stroke:#181818;stroke-width:0.5;"/><line style="stroke:#181818;stroke-width:0.5;" x1="812" x2="822" y1="55" y2="45"/><line style="stroke:#181818;stroke-width:0.5;" x1="714" x2="812" y1="55" y2="55"/><line style="stroke:#181818;stroke-width:0.5;" x1="812" x2="812" y1="55" y2="94.0679"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="68" x="729" y="79.9659">Mohamed</text></g><!--MD5=[a58d95696ab5400b531f2ae46d49e307]
-entity Farouk--><g id="elem_Farouk"><polygon fill="#F1F1F1" points="878.5,55,888.5,45,963.5,45,963.5,84.0679,953.5,94.0679,878.5,94.0679,878.5,55" style="stroke:#181818;stroke-width:0.5;"/><line style="stroke:#181818;stroke-width:0.5;" x1="953.5" x2="963.5" y1="55" y2="45"/><line style="stroke:#181818;stroke-width:0.5;" x1="878.5" x2="953.5" y1="55" y2="55"/><line style="stroke:#181818;stroke-width:0.5;" x1="953.5" x2="953.5" y1="55" y2="94.0679"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="45" x="893.5" y="79.9659">Farouk</text></g><!--MD5=[d38e4d84fc4739c648170106e4eb29e0]
+entity Oumayma--><g id="elem_Oumayma"><polygon fill="#FF70A6" points="23.5,55,33.5,45,132.5,45,132.5,84.0679,122.5,94.0679,23.5,94.0679,23.5,55" style="stroke:#181818;stroke-width:0.5;"/><line style="stroke:#181818;stroke-width:0.5;" x1="122.5" x2="132.5" y1="55" y2="45"/><line style="stroke:#181818;stroke-width:0.5;" x1="23.5" x2="122.5" y1="55" y2="55"/><line style="stroke:#181818;stroke-width:0.5;" x1="122.5" x2="122.5" y1="55" y2="94.0679"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="69" x="38.5" y="79.9659">Oumayma</text></g><!--MD5=[acc35136daa1965b6fda1e1ebe04062a]
+entity Essia--><g id="elem_Essia"><polygon fill="#2A9D8F" points="189,55,199,45,263,45,263,84.0679,253,94.0679,189,94.0679,189,55" style="stroke:#181818;stroke-width:0.5;"/><line style="stroke:#181818;stroke-width:0.5;" x1="253" x2="263" y1="55" y2="45"/><line style="stroke:#181818;stroke-width:0.5;" x1="189" x2="253" y1="55" y2="55"/><line style="stroke:#181818;stroke-width:0.5;" x1="253" x2="253" y1="55" y2="94.0679"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="34" x="204" y="79.9659">Essia</text></g><!--MD5=[a12c0b578dda09f912d4fc7b594b71dd]
+entity Nayrouz--><g id="elem_Nayrouz"><polygon fill="#2A9D8F" points="319,55,329,45,415,45,415,84.0679,405,94.0679,319,94.0679,319,55" style="stroke:#181818;stroke-width:0.5;"/><line style="stroke:#181818;stroke-width:0.5;" x1="405" x2="415" y1="55" y2="45"/><line style="stroke:#181818;stroke-width:0.5;" x1="319" x2="405" y1="55" y2="55"/><line style="stroke:#181818;stroke-width:0.5;" x1="405" x2="405" y1="55" y2="94.0679"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="56" x="334" y="79.9659">Nayrouz</text></g><!--MD5=[34acac307c107791763ddd5829fbdde4]
+entity Khalil--><g id="elem_Khalil"><polygon fill="#F4A261" points="580,55,590,45,658,45,658,84.0679,648,94.0679,580,94.0679,580,55" style="stroke:#181818;stroke-width:0.5;"/><line style="stroke:#181818;stroke-width:0.5;" x1="648" x2="658" y1="55" y2="45"/><line style="stroke:#181818;stroke-width:0.5;" x1="580" x2="648" y1="55" y2="55"/><line style="stroke:#181818;stroke-width:0.5;" x1="648" x2="648" y1="55" y2="94.0679"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="38" x="595" y="79.9659">Khalil</text></g><!--MD5=[cd2a98d820da32f935bb956895344a13]
+entity Taha--><g id="elem_Taha"><polygon fill="#F4A261" points="471.5,55,481.5,45,544.5,45,544.5,84.0679,534.5,94.0679,471.5,94.0679,471.5,55" style="stroke:#181818;stroke-width:0.5;"/><line style="stroke:#181818;stroke-width:0.5;" x1="534.5" x2="544.5" y1="55" y2="45"/><line style="stroke:#181818;stroke-width:0.5;" x1="471.5" x2="534.5" y1="55" y2="55"/><line style="stroke:#181818;stroke-width:0.5;" x1="534.5" x2="534.5" y1="55" y2="94.0679"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="33" x="486.5" y="79.9659">Taha</text></g><!--MD5=[b01fb5bd1ff74523e26e164773e0f645]
+entity Mohamed--><g id="elem_Mohamed"><polygon fill="#8ECAE6" points="714,55,724,45,822,45,822,84.0679,812,94.0679,714,94.0679,714,55" style="stroke:#181818;stroke-width:0.5;"/><line style="stroke:#181818;stroke-width:0.5;" x1="812" x2="822" y1="55" y2="45"/><line style="stroke:#181818;stroke-width:0.5;" x1="714" x2="812" y1="55" y2="55"/><line style="stroke:#181818;stroke-width:0.5;" x1="812" x2="812" y1="55" y2="94.0679"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="68" x="729" y="79.9659">Mohamed</text></g><!--MD5=[a58d95696ab5400b531f2ae46d49e307]
+entity Farouk--><g id="elem_Farouk"><polygon fill="#8ECAE6" points="878.5,55,888.5,45,963.5,45,963.5,84.0679,953.5,94.0679,878.5,94.0679,878.5,55" style="stroke:#181818;stroke-width:0.5;"/><line style="stroke:#181818;stroke-width:0.5;" x1="953.5" x2="963.5" y1="55" y2="45"/><line style="stroke:#181818;stroke-width:0.5;" x1="878.5" x2="953.5" y1="55" y2="55"/><line style="stroke:#181818;stroke-width:0.5;" x1="953.5" x2="953.5" y1="55" y2="94.0679"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="45" x="893.5" y="79.9659">Farouk</text></g><!--MD5=[e6a4575ae7dfb0c5fb952ea54a2177aa]
 @startuml
 skinparam BackgroundColor transparent
 skinparam componentStyle rectangle
 
 component Networking {
-	node Oumayma
+	node Oumayma #ff70a6
 }
 
 component "Compute 1" {
-	node Essia
+	node Essia   #2a9d8f
 }
 
 component "Compute 2" {
-	node Nayrouz
+	node Nayrouz #2a9d8f
 }
 
 component Controller {
-	node Khalil
-	node Taha
+	node Khalil  #f4a261
+	node Taha    #f4a261
 }
 
 component "Storage 1" {
-	node Mohamed
+	node Mohamed #8ecae6
 }
 
 component "Storage 2" {
-	node Farouk
+	node Farouk  #8ecae6
 }
 @enduml
 
