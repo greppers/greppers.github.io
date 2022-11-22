@@ -1,27 +1,27 @@
 #+TITLE: OpenStack Infrastructure
-#+INDEX: Infrastructure
+#+INDEX: OpenStack!Infrastructure
 
 #+name: arch
-#+begin_src plantuml :file ../../assets/images/arch.svg :exports results :eval yes :cache yes
+#+begin_src plantuml :file ../../assets/images/arch.svg :exports results
 @startuml
 skinparam BackgroundColor transparent
 skinparam componentStyle rectangle
 
-component Networking {
-	node Neutron   #ff70a6
+component Controller {
+	node Nova as N1 #f4a261
+	node Keystone   #f4a261
+	node Placement  #f4a261
+	node Glance     #f4a261
+	node Horizon    #f4a261
+	node Heat       #f4a261
 }
 
 component Compute {
-	node Nova
+	node Nova as N2 #2a9d8f
 }
 
-component Controller {
-	node Nova      #f4a261
-	node Keystone  #f4a261
-	node Placement #f4a261
-	node Glance    #f4a261
-	node Horizon   #f4a261
-	node Heat      #f4a261
+component Networking {
+	node Neutron   #ff70a6
 }
 
 component Storage {
@@ -31,5 +31,6 @@ component Storage {
 @enduml
 #+end_src
 
-#+RESULTS[3bac05780c78b0a9e114750083d9802657591ca1]: arch
+#+RESULTS: arch
 [[file:../../assets/images/arch.svg]]
+

@@ -25,25 +25,26 @@
 ;; org-publish-project-alist.  It should also specify any other
 ;; options that affect the building of the website.
 
+(require 'package)
+
+(add-to-list 'package-archives '("melpa" . "https://melpa.org/packages/"))
+  
+(package-initialize)
+
+(unless (package-installed-p 'use-package)
+  (package-install 'use-package))
+  
+(unless package-archive-contents
+  (package-refresh-contents))
+
 (normal-top-level-add-subdirs-to-load-path)
 
 (require 'ox-publish)
 (require 'project)
 (require 'forgecast)
-(require 'package)
 
-(add-to-list 'package-archives '("melpa" . "https://melpa.org/packages/"))
-
-(package-initialize)
-
-(unless (package-installed-p 'use-package)
-  (package-install 'use-package))
-
-(unless package-archive-contents
-  (package-refresh-contents))
-
-(package-install 'ox-reveal)
-(require 'ox-reveal)
+(use-package ox-reveal
+  :ensure t)
 
 (setq default-directory
       (expand-file-name
@@ -162,4 +163,4 @@ INFO is a plist used as a communication channel."
 	       :publishing-directory "public/css"
 	       :publishing-function 'org-publish-attachment)
 	 (list "all"
-	       :components (list "main" "docs" "assets" "css")))))
+	       :components (list "main" "presentations" "docs" "assets" "css")))))
