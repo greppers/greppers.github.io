@@ -1,48 +1,34 @@
 #+TITLE: OpenStack Infrastructure
 #+INDEX: Infrastructure
 
-#+begin_src plantuml :file ../assets/images/arch.svg :exports results
+#+begin_src plantuml :file ../../assets/images/arch.svg :exports results
 @startuml
 skinparam BackgroundColor transparent
 skinparam componentStyle rectangle
 
+component Networking {
+	node Neutron
+}
+
 component "Compute" {
-	[Nova]
+	node Nova
 }
 
-component "Web frontends" {
-	[Horizon]
+component Controller {
+	node Nova
+	node Keystone
+	node Placement
+	node Glance
+	node Horizon
+	node Heat
 }
 
-component "Networking Services" {
-	[Neutron]
+component "Storage" {
+	node Cinder
+	node Swift
 }
-
-component "Orchestration Services" {
-	[Heat]
-}
-
-component "Shared Services" {
-	[Glance]
-	[Keystone]
-	[Neutron]
-}
-
-component "Storage Services" {
-	[Cinder]
-}
-
-[Neutron] --> [Keystone]
-[Heat] --> [Keystone]
-[Glance] --> [Keystone]
-[Cinder] --> [Keystone]
-[Horizon] --> [Keystone]
-
-[Nova] --> [Keystone]
-[Nova] --> [Neutron]
-[Nova] --> [Glance]
 @enduml
 #+end_src
 
 #+RESULTS:
-[[file:../assets/images/arch.svg]]
+[[file:../../assets/images/arch.svg]]

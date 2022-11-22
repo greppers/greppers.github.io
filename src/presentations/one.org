@@ -1,28 +1,23 @@
-#+TITLE: Transforming Education with Sustainable Development
-#+INDEX: Project Specification
+#+TITLE: Cloud Composition
+#+SUBTITLE: We got interesting stuff in here!
+#+OPTIONS: toc:1 num:nil
+#+REVEAL_ROOT: https://cdn.jsdelivr.net/npm/reveal.js
+#+REVEAL_HLEVEL: 1
+#+REVEAL_THEME: sky
 
-#+LATEX_HEADER: \usepackage{parskip}
-
-* Abstract
-
-This project and the applications that compose it aim to address the
-/Quality Education/ goal from the United Nations' 2030 Agenda.
-
-Sustainable Development is a call to action, and an active program to
-end poverty, protect the planet and ensure prosperity and peace for
-all people, through the combination of manpower of all nations, in all
-domains, to hopefully alleviate the issues we currently face.
+* An intro
 
 This project seeks to integrate cloud technologies with the
 educational system by providing a platform dedicated to the journaling
-of open scientific documents, ranging from research papers to books
-and literature.
+of open scientific documents.
 
 * Technical requirements
 
 ** Infrastructure
 
-#+ATTR_LATEX: :environment longtable :align |p{4cm}|
+*** Requirements
+
+#+REVEAL_HTML: <div style="font-size: 0.4em;">
 | Requirement                                                      | OpenStack | CloudStack | OpenNebula |
 |------------------------------------------------------------------+-----------+------------+------------|
 | Open source software                                             | ✓         | ✓          | ✓          |
@@ -37,43 +32,34 @@ and literature.
 | Manageable through a centralized dashboard                       | ✓         | ✓          | ✓          |
 | Provide standards for building open and scalable clouds          | ✓         | ✓          | ✓          |
 | Backup and archive large volumes of data with linear performance | ✓         | ✓          | ✓          |
+#+REVEAL_HTML: </div>
 
-The three candidates fair quite well against each other, let's analyze
-some of the differences to be able to pick the right solution.
+*** What did we pick?
 
-CloudStack is a monolithic beast, every one of its core components
-(e.g. Storage, Compute, Monitoring, etc.) strongly depends on the
-other. While this architecture certainly has its advantages, most
-notably in the installation and maintenance phases, it does not meet
-the requirements of the project.
-
-OpenNebula's hypervisor support is limited to KVM and VMWare ESXi,
-which doesn't quite compare to the
-[[https://docs.openstack.org/nova/queens/admin/configuration/hypervisors.html][extensive
-list of hypervisors that OpenStack supports]].
-
-That leaves us with OpenStack, the only cloud infrastructure software
-that meets all of our requirements.
+#+HTML: <img src="https://upload.wikimedia.org/wikipedia/commons/e/e6/OpenStack%C2%AE_Logo_2016.svg" class="fragment fade-in" width="300" height="300">
 
 ** Virtualization
 
-#+ATTR_LATEX: :environment longtable :align |p{4cm}|
+*** Requirements
+
+#+REVEAL_HTML: <div style="font-size: 0.6em;">
 | Requirement                                                                  | KVM | Hyper-V | Xen |
 |------------------------------------------------------------------------------+-----+---------+-----|
 | Full-supported by and compatible with the infrastructure management solution | ✓   | ✓       | ✓   |
 | Can use a wide variety of certified Linux-supported hardware platforms       | ✓   |         | ✓   |
 | Supports live migration                                                      | ✓   | ✓       | ✓   |
 | Proportional scaling in terms of user traffic and workload                   | ✓   | ✓       | ✓   |
+#+REVEAL_HTML: </div>
 
-Cloud providers have been slowly but steadily moving away from
-Citrix's Xen, probably because KVM offers [[https://www.linode.com/blog/linode/linode-turns-12-heres-some-kvm/][better performance]] for less
-management overhead.
+*** What did we pick?
 
-KVM is clearly the more versatile hypervisor.
+#+HTML: <img src="https://upload.wikimedia.org/wikipedia/commons/7/70/Kvmbanner-logo2_1.png" class="fragment fade-in" width="300">
 
 ** Orchestration
 
-#+ATTR_LATEX: :environment longtable :align |p{4cm}|
+*** Requirements
+
+#+REVEAL_HTML: <div style="font-size: 0.6em;">
 | Requirement                                               | Kubernetes | Docker Swarm |
 |-----------------------------------------------------------+------------+--------------|
 | Compatible with any Linux distribution                    | ✓          | ✓            |
@@ -83,21 +69,17 @@ KVM is clearly the more versatile hypervisor.
 | Provide deployment patterns and templates                 | ✓          | ✓            |
 | Ensure self-healing                                       | ✓          | ✓            |
 | Provide service discovery and load balancing              |            | ✓            |
+#+REVEAL_HTML: </div>
 
-The advantage that Docker Swarm has over Kubernetes is that it offers
-load balancing and service discovery features out of the box, while
-Kubernetes takes the lead in that it is more configurable and through
-automation tools like Ansible or Puppet.
+*** What did we pick?
 
-The scability of our cloud infrastructure strongly depends on the
-ability of the container orchestration tool of choice to be automated.
-
-Docker Swarm's automation features [[https://docs.ansible.com/ansible/latest/collections/community/docker/docker_swarm_module.html#id1][leave much to be desired]], which
-means that Kubernetes is unsurprisingly more fit for the job.
+#+HTML: <img src="https://upload.wikimedia.org/wikipedia/commons/3/39/Kubernetes_logo_without_workmark.svg" class="fragment fade-in" width="300">
 
 ** Automation
 
-#+ATTR_LATEX: :environment longtable :align |p{4cm}|
+*** Requirements
+
+#+REVEAL_HTML: <div style="font-size: 0.6em;">
 | Requirement                                        | Ansible | Puppet | Chef |
 |----------------------------------------------------+---------+--------+------|
 | Open source software                               | ✓       | ✓      | ✓    |
@@ -106,8 +88,17 @@ means that Kubernetes is unsurprisingly more fit for the job.
 | Provisioning and configuration management          | ✓       | ✓      | ✓    |
 | Application-deployment features                    | ✓       | ✓      | ✓    |
 | Support standard communication protocols, e.g. SSH | ✓       |        |      |
+#+REVEAL_HTML: </div>
 
-Compared to its alternatives, Ansible meets every one of our
-requirements - it's an agentless, cross-platform and event-driven
-automation tool that integrates perfectly with the rest of our
-infrastructure.
+*** What did we pick?
+
+#+HTML: <img src="https://upload.wikimedia.org/wikipedia/commons/2/24/Ansible_logo.svg" class="fragment fade-in" width="300">
+
+* Cloud Composition
+
+** Logical Architecture
+
+[[file:../../assets/images/arch.svg]]
+
+** Physical Architecture
+
