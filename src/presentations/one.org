@@ -109,7 +109,7 @@ of open scientific documents.
 |---------+----------------------+------+---------------------------|
 | Essia   | Intel i5-9300H (8)   | 16GB | 1TB (SSD)                 |
 | Khalil  | Intel i5-8250U (8)   | 8GB  | 119GB (SSD) + 465GB (HDD) |
-| Mohamed | Intel i7-10870H (16) | 16GB |                           |
+| Mohamed | Intel i7-10870H (16) | 8GB  | 512GB (SSD)               |
 | Mokhtar | Intel i5-10300H (8)  | 16GB | 512GB (SSD)               |
 | Nayrouz | Intel i7-1065G7 (8)  | 8GB  | 512GB (SSD)               |
 | Oumayma | Intel i5-9300H (8)   | 8GB  | 1TB (HDD)                 |
@@ -117,3 +117,38 @@ of open scientific documents.
 #+REVEAL_HTML: </div>
 
 *** Node Distribution
+
+#+begin_src plantuml :file ../../assets/images/node-dist.svg :exports results
+@startuml
+skinparam BackgroundColor transparent
+skinparam componentStyle rectangle
+
+component Networking {
+	node Oumayma
+}
+
+component "Compute 1" {
+	node Essia
+}
+
+component "Compute 2" {
+	node Nayrouz
+}
+
+component Controller {
+	node Khalil
+	node Taha
+}
+
+component "Storage 1" {
+	node Mohamed
+}
+
+component "Storage 2" {
+	node Farouk
+}
+@enduml
+#+end_src
+
+#+RESULTS:
+[[file:../../assets/images/node-dist.svg]]
