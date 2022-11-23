@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="400mm"
+   height="400mm"
+   viewBox="0 0 400 400"
+   version="1.1"
+   id="svg10967"
+   xml:space="preserve"
+   inkscape:export-filename="bitmap.png"
+   inkscape:export-xdpi="96"
+   inkscape:export-ydpi="96"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"><sodipodi:namedview
+     id="namedview10969"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     showgrid="false"
+     showguides="true"><sodipodi:guide
+       position="56.363129,179.10463"
+       orientation="1,0"
+       id="guide12994"
+       inkscape:locked="false" /></sodipodi:namedview><defs
+     id="defs10964"><rect
+       x="477.99472"
+       y="335.91861"
+       width="299.04501"
+       height="130.12048"
+       id="rect12809" /></defs><g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"><g
+       id="g11953"
+       transform="matrix(0.24105549,0,0,0.24105549,206.39806,98.500716)"><!--MD5=[8dc159a1fdb21c346ca5bb23cebae06d]
+cluster Heat--><rect
+         style="fill:none;stroke:#000000;stroke-width:4.14842;stroke-dasharray:none;stroke-opacity:1"
+         id="rect12069"
+         width="1212.089"
+         height="203.13467"
+         x="-621.83453"
+         y="954.51544" /><!--MD5=[670460ded83ce19dcdee0b471ee4d4e2]
+cluster Resource Group 1--><!--MD5=[592cfb073af7f4c28b1222f9a9e29de6]
+cluster Resource Group 2--><!--MD5=[70685f557e982b131c9e4b9741d42562]
+entity G1VM1--><!--MD5=[5414ab6f09f4be5a99a154ee7752b2af]
+entity G1VM2--><!--MD5=[22778947b3dca5b01d00da6446ba497d]
+entity G1VM3--><!--MD5=[31cfee5764a8b102eba969900279ed36]
+entity G2VM1--><!--MD5=[ef8f1924b0c5a1711bfc232090372c97]
+entity G2VM2--><!--MD5=[46071f11c5c82cb5c7471a1d8e7a8353]
+entity G2VM3--><!--MD5=[d00dc155c55af555a3a0225537d25cf4]
+entity G2VM4--><!--MD5=[295b2f5a1c1de176df730da07184316f]
+@startuml
+skinparam BackgroundColor transparent
+skinparam componentStyle rectangle
+
+component "Heat" {
+	component "Resource Group 1" {
+		node VM1 as G1VM1
+		node VM2 as G1VM2
+		node VM3 as G1VM3
+	}
+
+	component "Resource Group 2" {
+		node VM1 as G2VM1
+		node VM2 as G2VM2
+		node VM3 as G2VM3
+		node VM4 as G2VM4
+	}
+}
+@enduml
+
+PlantUML version 1.2022.7(Mon Aug 22 18:01:30 CET 2022)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Default Encoding: UTF-8
+Language: en
+Country: US
+--><text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:43.9041px;font-family:'Fira Sans';-inkscape-font-specification:'Fira Sans, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:none;stroke:#000000;stroke-width:4.14843;stroke-dasharray:none;stroke-opacity:1"
+         x="-167.06807"
+         y="596.77032"
+         id="text12641"><tspan
+           sodipodi:role="line"
+           id="tspan12643"
+           x="-167.06807"
+           y="596.77032"></tspan></text><text
+         xml:space="preserve"
+         transform="matrix(1.0976034,0,0,1.0976034,-649.73725,659.4697)"
+         id="text12807"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:40px;font-family:'Fira Sans';-inkscape-font-specification:'Fira Sans, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;white-space:pre;shape-inside:url(#rect12809);fill:#000000;fill-opacity:1;stroke:none;stroke-width:3.77953;stroke-dasharray:none;stroke-opacity:1"><tspan
+           x="477.99414"
+           y="372.08464"
+           id="tspan27431">OpenStack</tspan></text><rect
+         style="fill:none;stroke:#000000;stroke-width:4.14842;stroke-dasharray:none;stroke-opacity:1"
+         id="rect12069-2-2-1"
+         width="1210.6168"
+         height="202.04768"
+         x="-620.90588"
+         y="678.06085" /><text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:43.9041px;font-family:'Fira Sans';-inkscape-font-specification:'Fira Sans, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:4.14843;stroke-dasharray:none;stroke-opacity:1"
+         x="-59.764969"
+         y="794.29749"
+         id="text12867"><tspan
+           sodipodi:role="line"
+           id="tspan12865"
+           style="stroke-width:4.14842"
+           x="-59.764969"
+           y="794.29749">KVM</tspan></text><rect
+         style="fill:none;stroke:#000000;stroke-width:4.38579;stroke-dasharray:none;stroke-opacity:1"
+         id="rect12069-2-2-9"
+         width="589.01648"
+         height="203.88922"
+         x="1.6151968"
+         y="405.80011" /><rect
+         style="fill:none;fill-opacity:1;stroke:#7d8e9c;stroke-width:4.43208;stroke-dasharray:17.7284, 35.4567;stroke-dashoffset:0;stroke-opacity:1"
+         id="rect24102"
+         width="588.97021"
+         height="376.39859"
+         x="1.6383072"
+         y="-233.90553" /><rect
+         style="fill:none;stroke:#000000;stroke-width:4.38579;stroke-dasharray:none;stroke-opacity:1"
+         id="rect12069-2-2-9-9"
+         width="589.01654"
+         height="203.88922"
+         x="1.6151599"
+         y="170.48146" /><g
+         id="g24885"><rect
+           style="fill:none;stroke:#000000;stroke-width:3.98033;stroke-dasharray:none;stroke-opacity:1"
+           id="rect12069-2-2"
+           width="288.29999"
+           height="205.22055"
+           x="-622.49231"
+           y="405.13443" /><text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:41.4725px;font-family:'Fira Sans';-inkscape-font-specification:'Fira Sans, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:3.91867;stroke-dasharray:none;stroke-opacity:1"
+           x="-522.73407"
+           y="493.45386"
+           id="text12921"
+           transform="scale(0.94355218,1.0598248)"><tspan
+             sodipodi:role="line"
+             id="tspan12919"
+             style="stroke-width:3.91866"
+             x="-522.73407"
+             y="493.45386">VM</tspan></text></g><g
+         id="g24885-3"
+         transform="translate(311.0861,1.3744969e-5)"><rect
+           style="fill:none;stroke:#000000;stroke-width:3.98033;stroke-dasharray:none;stroke-opacity:1"
+           id="rect12069-2-2-6"
+           width="288.29999"
+           height="205.22055"
+           x="-622.49231"
+           y="405.13443" /><text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:41.4725px;font-family:'Fira Sans';-inkscape-font-specification:'Fira Sans, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:3.91867;stroke-dasharray:none;stroke-opacity:1"
+           x="-522.73407"
+           y="493.45386"
+           id="text12921-5"
+           transform="scale(0.94355218,1.0598248)"><tspan
+             sodipodi:role="line"
+             id="tspan12919-6"
+             style="stroke-width:3.91866"
+             x="-522.73407"
+             y="493.45386">VM</tspan></text></g><text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:41.4725px;font-family:'Fira Sans';-inkscape-font-specification:'Fira Sans, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:3.91867;stroke-dasharray:none;stroke-opacity:1"
+         x="286.86111"
+         y="493.45386"
+         id="text12921-1"
+         transform="scale(0.94355218,1.0598248)"><tspan
+           sodipodi:role="line"
+           id="tspan12919-7"
+           style="stroke-width:3.91866"
+           x="286.86111"
+           y="493.45386">VM</tspan></text><path
+         style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:4.14843;stroke-dasharray:none;stroke-opacity:1"
+         d="m -263.09173,952.44123 c 0,-34.00602 0,-34.00602 0,-34.00602"
+         id="path12982" /><text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:43.9041px;font-family:'Fira Sans';-inkscape-font-specification:'Fira Sans, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0;stroke-dasharray:none;stroke-opacity:1"
+         x="179.4924"
+         y="288.71448"
+         id="text21122"><tspan
+           sodipodi:role="line"
+           id="tspan21120"
+           style="stroke-width:0;stroke-dasharray:none"
+           x="179.4924"
+           y="288.71448">Kubernetes</tspan></text><g
+         id="g24959"
+         transform="translate(-4.5395256)"><rect
+           style="fill:none;stroke:#000000;stroke-width:4.14842;stroke-dasharray:none;stroke-opacity:1"
+           id="rect12069-2-2-9-7-6"
+           width="243.54773"
+           height="205.46941"
+           x="324.16135"
+           y="-91.315117" /><text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:43.9041px;font-family:'Fira Sans';-inkscape-font-specification:'Fira Sans, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0;stroke-dasharray:none;stroke-opacity:1"
+           x="347.59015"
+           y="28.849514"
+           id="text23374"><tspan
+             sodipodi:role="line"
+             id="tspan23372"
+             style="stroke-width:0"
+             x="347.59015"
+             y="28.849514">Container</tspan></text></g><g
+         id="g24964"
+         transform="translate(6.3135931)"><rect
+           style="fill:none;stroke:#000000;stroke-width:4.14842;stroke-dasharray:none;stroke-opacity:1"
+           id="rect12069-2-2-9-7-6-3"
+           width="243.54773"
+           height="205.46941"
+           x="24.537781"
+           y="-91.315117" /><text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:43.9041px;font-family:'Fira Sans';-inkscape-font-specification:'Fira Sans, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0;stroke-dasharray:none;stroke-opacity:1"
+           x="47.966591"
+           y="28.849514"
+           id="text23374-9"><tspan
+             sodipodi:role="line"
+             id="tspan23372-4"
+             style="stroke-width:0"
+             x="47.966591"
+             y="28.849514">Container</tspan></text></g><text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:43.9041px;font-family:'Fira Sans';-inkscape-font-specification:'Fira Sans, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:none;fill-opacity:1;stroke:#7d8e9c;stroke-width:4.14843;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+         x="257.66348"
+         y="-170.54416"
+         id="text25020"><tspan
+           sodipodi:role="line"
+           id="tspan25018"
+           style="fill:#7d8e9c;fill-opacity:1;stroke:none;stroke-width:4.14842;stroke-dasharray:none"
+           x="257.66348"
+           y="-170.54416">Pod</tspan></text></g></g></svg>

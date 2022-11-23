@@ -1,34 +1,79 @@
-#+TITLE: OpenStack Infrastructure
+#+TITLE: Cloud Infrastructure
 #+INDEX: OpenStack!Infrastructure
 
-#+name: arch
-#+begin_src plantuml :file ../../assets/images/arch.svg :exports results
+* Overview
+
+#+HTML: <img src="/assets/images/infrastructure.svg">
+
+* OpenStack Nodes
+
+#+name: openstack-nodes
+#+begin_src plantuml :file ../../assets/images/openstack-nodes.svg :exports results
 @startuml
 skinparam BackgroundColor transparent
 skinparam componentStyle rectangle
 
-component Controller {
-	node Nova as NO1 #f4a261
-	node Keystone   #f4a261
-	node Placement  #f4a261
-	node Glance     #f4a261
-	node Horizon    #f4a261
-	node Heat       #f4a261
-	node Neutron as NE1    #f4a261
-}
+component "OpenStack Components" {
+	component Controller {
+		node Nova as NO1 #f4a261
+		node Keystone   #f4a261
+		node Placement  #f4a261
+		node Glance     #f4a261
+		node Horizon    #f4a261
+		node Heat       #f4a261
+		node Neutron as NE1    #f4a261
+	}
 
-component Compute {
-	node Nova as NO2     #2a9d8f
-	node Neutron as NE2 #2a9d8f
-}
+	component Compute {
+		node Nova as NO2     #2a9d8f
+		node Neutron as NE2 #2a9d8f
+	}
 
-component Storage {
-	node Cinder    #8ecae6
-	node Swift     #8ecae6
+	component Storage {
+		node Cinder    #8ecae6
+		node Swift     #8ecae6
+	}
 }
 @enduml
 #+end_src
 
-#+RESULTS: arch
-[[file:../../assets/images/arch.svg]]
+#+RESULTS: openstack-nodes
+[[file:../../assets/images/openstack-nodes.svg]]
 
+* Node Distribution
+
+#+name: node-distribution
+#+begin_src plantuml :file ../../assets/images/node-distribution.svg :exports results
+@startuml
+skinparam BackgroundColor transparent
+skinparam componentStyle rectangle
+
+component "Compute 1" {
+	node Essia   #2a9d8f
+}
+
+component "Compute 2" {
+	node Nayrouz #2a9d8f
+}
+
+component "Compute 3" {
+	node Oumayma #2a9d8f
+}
+
+component "Controller" {
+	node Khalil  #f4a261
+	node Taha    #f4a261
+}
+
+component "Storage 1" {
+	node Mohamed #8ecae6
+}
+
+component "Storage 2" {
+	node Farouk  #8ecae6
+}
+@enduml
+#+end_src
+
+#+RESULTS: node-distribution
+[[file:../../assets/images/node-distribution.svg]]

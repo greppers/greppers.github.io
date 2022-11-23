@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentStyleType="text/css" height="404px" preserveAspectRatio="none" style="width:960px;height:404px;background:#00000000;" version="1.1" viewBox="0 0 960 404" width="960px" zoomAndPan="magnify"><defs/><g><!--MD5=[bdac952b415d9f59706b59cdf9fd8b0c]
+cluster OpenStack Components--><g id="cluster_OpenStack Components"><rect fill="none" height="391" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:1.0;" width="947" x="7" y="7"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="168" x="396.5" y="23.9659">OpenStack Components</text></g><!--MD5=[1f2cfc53d9d308f53762fd0fcbaa4873]
+cluster Controller--><g id="cluster_Controller"><rect fill="none" height="321" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:1.0;" width="388" x="542" y="53"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="70" x="701" y="69.9659">Controller</text></g><!--MD5=[00d2b742c84eb79bfc1f61fe02e55ea0]
+cluster Compute--><g id="cluster_Compute"><rect fill="none" height="103" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:1.0;" width="237" x="281" y="53"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="64" x="367.5" y="69.9659">Compute</text></g><!--MD5=[562ed55e840afc79d9783beef242227d]
+cluster Storage--><g id="cluster_Storage"><rect fill="none" height="103" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:1.0;" width="226" x="31" y="53"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="54" x="117" y="69.9659">Storage</text></g><!--MD5=[9a2465967e26d1b33bfde8f21c578439]
+entity NO1--><g id="elem_NO1"><polygon fill="#F4A261" points="558,101,568,91,632,91,632,130.0679,622,140.0679,558,140.0679,558,101" style="stroke:#181818;stroke-width:0.5;"/><line style="stroke:#181818;stroke-width:0.5;" x1="622" x2="632" y1="101" y2="91"/><line style="stroke:#181818;stroke-width:0.5;" x1="558" x2="622" y1="101" y2="101"/><line style="stroke:#181818;stroke-width:0.5;" x1="622" x2="622" y1="101" y2="140.0679"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="34" x="573" y="125.9659">Nova</text></g><!--MD5=[1efe831e7da3b9b03f2cb11fffcf97ab]
+entity Keystone--><g id="elem_Keystone"><polygon fill="#F4A261" points="667.5,101,677.5,91,768.5,91,768.5,130.0679,758.5,140.0679,667.5,140.0679,667.5,101" style="stroke:#181818;stroke-width:0.5;"/><line style="stroke:#181818;stroke-width:0.5;" x1="758.5" x2="768.5" y1="101" y2="91"/><line style="stroke:#181818;stroke-width:0.5;" x1="667.5" x2="758.5" y1="101" y2="101"/><line style="stroke:#181818;stroke-width:0.5;" x1="758.5" x2="758.5" y1="101" y2="140.0679"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="61" x="682.5" y="125.9659">Keystone</text></g><!--MD5=[2863a66a0b47e1fbc17e5233ad5dbc19]
+entity Placement--><g id="elem_Placement"><polygon fill="#F4A261" points="804,101,814,91,914,91,914,130.0679,904,140.0679,804,140.0679,804,101" style="stroke:#181818;stroke-width:0.5;"/><line style="stroke:#181818;stroke-width:0.5;" x1="904" x2="914" y1="101" y2="91"/><line style="stroke:#181818;stroke-width:0.5;" x1="804" x2="904" y1="101" y2="101"/><line style="stroke:#181818;stroke-width:0.5;" x1="904" x2="904" y1="101" y2="140.0679"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="70" x="819" y="125.9659">Placement</text></g><!--MD5=[76e7b5c806c45b86fec869c1b934a8f3]
+entity Glance--><g id="elem_Glance"><polygon fill="#F4A261" points="560,210,570,200,646,200,646,239.0679,636,249.0679,560,249.0679,560,210" style="stroke:#181818;stroke-width:0.5;"/><line style="stroke:#181818;stroke-width:0.5;" x1="636" x2="646" y1="210" y2="200"/><line style="stroke:#181818;stroke-width:0.5;" x1="560" x2="636" y1="210" y2="210"/><line style="stroke:#181818;stroke-width:0.5;" x1="636" x2="636" y1="210" y2="249.0679"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="46" x="575" y="234.9659">Glance</text></g><!--MD5=[2454c6ea28b193a40926c3f0474702ca]
+entity Horizon--><g id="elem_Horizon"><polygon fill="#F4A261" points="681,210,691,200,773,200,773,239.0679,763,249.0679,681,249.0679,681,210" style="stroke:#181818;stroke-width:0.5;"/><line style="stroke:#181818;stroke-width:0.5;" x1="763" x2="773" y1="210" y2="200"/><line style="stroke:#181818;stroke-width:0.5;" x1="681" x2="763" y1="210" y2="210"/><line style="stroke:#181818;stroke-width:0.5;" x1="763" x2="763" y1="210" y2="249.0679"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="52" x="696" y="234.9659">Horizon</text></g><!--MD5=[ce1d86443f850a1450f53f87c3db9b4f]
+entity Heat--><g id="elem_Heat"><polygon fill="#F4A261" points="808.5,210,818.5,200,879.5,200,879.5,239.0679,869.5,249.0679,808.5,249.0679,808.5,210" style="stroke:#181818;stroke-width:0.5;"/><line style="stroke:#181818;stroke-width:0.5;" x1="869.5" x2="879.5" y1="210" y2="200"/><line style="stroke:#181818;stroke-width:0.5;" x1="808.5" x2="869.5" y1="210" y2="210"/><line style="stroke:#181818;stroke-width:0.5;" x1="869.5" x2="869.5" y1="210" y2="249.0679"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="31" x="823.5" y="234.9659">Heat</text></g><!--MD5=[b021b2e6ac2aff858d1bc62cd93f52ab]
+entity NE1--><g id="elem_NE1"><polygon fill="#F4A261" points="558,319,568,309,654,309,654,348.0679,644,358.0679,558,358.0679,558,319" style="stroke:#181818;stroke-width:0.5;"/><line style="stroke:#181818;stroke-width:0.5;" x1="644" x2="654" y1="319" y2="309"/><line style="stroke:#181818;stroke-width:0.5;" x1="558" x2="644" y1="319" y2="319"/><line style="stroke:#181818;stroke-width:0.5;" x1="644" x2="644" y1="319" y2="358.0679"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="56" x="573" y="343.9659">Neutron</text></g><!--MD5=[5500edbf1986cbdd522b83ad89a71ebc]
+entity NO2--><g id="elem_NO2"><polygon fill="#2A9D8F" points="428,101,438,91,502,91,502,130.0679,492,140.0679,428,140.0679,428,101" style="stroke:#181818;stroke-width:0.5;"/><line style="stroke:#181818;stroke-width:0.5;" x1="492" x2="502" y1="101" y2="91"/><line style="stroke:#181818;stroke-width:0.5;" x1="428" x2="492" y1="101" y2="101"/><line style="stroke:#181818;stroke-width:0.5;" x1="492" x2="492" y1="101" y2="140.0679"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="34" x="443" y="125.9659">Nova</text></g><!--MD5=[b60db3768cb72ba48a3e8221614eeed8]
+entity NE2--><g id="elem_NE2"><polygon fill="#2A9D8F" points="297,101,307,91,393,91,393,130.0679,383,140.0679,297,140.0679,297,101" style="stroke:#181818;stroke-width:0.5;"/><line style="stroke:#181818;stroke-width:0.5;" x1="383" x2="393" y1="101" y2="91"/><line style="stroke:#181818;stroke-width:0.5;" x1="297" x2="383" y1="101" y2="101"/><line style="stroke:#181818;stroke-width:0.5;" x1="383" x2="383" y1="101" y2="140.0679"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="56" x="312" y="125.9659">Neutron</text></g><!--MD5=[356069fef172b8079974352d24148513]
+entity Cinder--><g id="elem_Cinder"><polygon fill="#8ECAE6" points="155.5,101,165.5,91,240.5,91,240.5,130.0679,230.5,140.0679,155.5,140.0679,155.5,101" style="stroke:#181818;stroke-width:0.5;"/><line style="stroke:#181818;stroke-width:0.5;" x1="230.5" x2="240.5" y1="101" y2="91"/><line style="stroke:#181818;stroke-width:0.5;" x1="155.5" x2="230.5" y1="101" y2="101"/><line style="stroke:#181818;stroke-width:0.5;" x1="230.5" x2="230.5" y1="101" y2="140.0679"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="45" x="170.5" y="125.9659">Cinder</text></g><!--MD5=[151e09fb4d829607093fd8fd8cd561c3]
+entity Swift--><g id="elem_Swift"><polygon fill="#8ECAE6" points="47.5,101,57.5,91,120.5,91,120.5,130.0679,110.5,140.0679,47.5,140.0679,47.5,101" style="stroke:#181818;stroke-width:0.5;"/><line style="stroke:#181818;stroke-width:0.5;" x1="110.5" x2="120.5" y1="101" y2="91"/><line style="stroke:#181818;stroke-width:0.5;" x1="47.5" x2="110.5" y1="101" y2="101"/><line style="stroke:#181818;stroke-width:0.5;" x1="110.5" x2="110.5" y1="101" y2="140.0679"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="33" x="62.5" y="125.9659">Swift</text></g><!--MD5=[9028996374d21919aa0b4ed37e2f5162]
+@startuml
+skinparam BackgroundColor transparent
+skinparam componentStyle rectangle
+
+component "OpenStack Components" {
+	component Controller {
+		node Nova as NO1 #f4a261
+		node Keystone   #f4a261
+		node Placement  #f4a261
+		node Glance     #f4a261
+		node Horizon    #f4a261
+		node Heat       #f4a261
+		node Neutron as NE1    #f4a261
+	}
+
+	component Compute {
+		node Nova as NO2     #2a9d8f
+		node Neutron as NE2 #2a9d8f
+	}
+
+	component Storage {
+		node Cinder    #8ecae6
+		node Swift     #8ecae6
+	}
+}
+@enduml
+
+PlantUML version 1.2022.7(Mon Aug 22 18:01:30 CET 2022)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Default Encoding: UTF-8
+Language: en
+Country: US
+--></g></svg>
