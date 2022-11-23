@@ -8,20 +8,18 @@ skinparam BackgroundColor transparent
 skinparam componentStyle rectangle
 
 component Controller {
-	node Nova as N1 #f4a261
+	node Nova as NO1 #f4a261
 	node Keystone   #f4a261
 	node Placement  #f4a261
 	node Glance     #f4a261
 	node Horizon    #f4a261
 	node Heat       #f4a261
+	node Neutron as NE1    #f4a261
 }
 
 component Compute {
-	node Nova as N2 #2a9d8f
-}
-
-component Networking {
-	node Neutron   #ff70a6
+	node Nova as NO2     #2a9d8f
+	node Neutron as NE2 #2a9d8f
 }
 
 component Storage {
