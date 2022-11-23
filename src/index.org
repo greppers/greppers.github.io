@@ -11,5 +11,3 @@ students aiming to address the /Quality Education/ goal from the
 website.
 
 You can [[https://github.com/greppers][find us on GitHub]], that's where we do stuff.
-
-
