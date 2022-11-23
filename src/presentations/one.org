@@ -131,12 +131,12 @@ of open scientific documents.
 
 ** Vagrant
 
-#+HTML: <img src="https://drive.google.com/uc?id=1CWn_bgByvF4liFXKLM-4MSst2_Gn3_Q9" height="100">
+#+HTML: <img src="https://drive.google.com/uc?id=1NDJH7DuTx5hfoIG7TRkpmMeag2zRblIU" height="100">
 
 Build and maintain portable virtual software development environments.
 
 ** Terraform
 
-#+HTML: <img src="https://drive.google.com/uc?id=1NDJH7DuTx5hfoIG7TRkpmMeag2zRblIU" height="100">
+#+HTML: <img src="https://drive.google.com/uc?id=1CWn_bgByvF4liFXKLM-4MSst2_Gn3_Q9" height="100">
 
 Configure infrastructure through declarative configuration files.
