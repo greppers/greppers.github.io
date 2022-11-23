@@ -1,5 +1,4 @@
-* O
-  - OpenStack
-    - [[file:openstack-architecture.org][Infrastructure]]
+* C
+  - [[file:cloud-architecture.org][Cloud Architecture]]
 * P
   - [[file:project-specification.org][Project Specification]]

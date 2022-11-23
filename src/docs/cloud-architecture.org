@@ -1,5 +1,5 @@
-#+TITLE: Cloud Infrastructure
-#+INDEX: OpenStack!Infrastructure
+#+TITLE: Cloud Architecture
+#+INDEX: Cloud Architecture
 
 * Overview
 
