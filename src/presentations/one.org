@@ -108,8 +108,8 @@ of open scientific documents.
 | Member  | CPU                  | RAM  | Storage                   |
 |---------+----------------------+------+---------------------------|
 | Essia   | Intel i5-9300H (8)   | 16GB | 1TB (SSD)                 |
-| Khalil  | Intel i5-8250U (8)   | 8GB  | 119GB (SSD) + 465GB (HDD) |
-| Mohamed | Intel i7-10870H (16) | 8GB  | 512GB (SSD)               |
+| Khalil  | Intel i5-8250U (8)   | 16GB | 119GB (SSD) + 465GB (HDD) |
+| Mohamed | Intel i5-10870H (16) | 8GB  | 512GB (SSD)               |
 | Mokhtar | Intel i5-10300H (8)  | 16GB | 512GB (SSD)               |
 | Nayrouz | Intel i7-1065G7 (8)  | 8GB  | 512GB (SSD)               |
 | Oumayma | Intel i5-9300H (8)   | 8GB  | 1TB (HDD)                 |
