@@ -17,6 +17,8 @@ follow:
 :CUSTOM_ID: tooling
 :END:
 
+Presentations:
+- [[https://revealjs.com/][Reveal.js]]
 Markup:
 - [[https://orgmode.org][Org Mode]]
 Graphing & diagrams:  
