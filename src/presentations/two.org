@@ -1,0 +1,29 @@
+#+TITLE: OpenStack Explained
+#+SUBTITLE: Let's demistify OpenStack!
+#+EXPORT_FILE_NAME: 2
+#+OPTIONS: toc:1 num:nil
+#+REVEAL_ROOT: https://cdn.jsdelivr.net/npm/reveal.js
+#+REVEAL_HLEVEL: 1
+#+REVEAL_THEME: sky
+
+* Introduction
+OpenStack is:
+- an industry standard
+- a cloud computing infrastructure software project
+- a modular, pluggable and composable system for controlling massively
+  scalable clouds
+  
+* Components
+
+Let's have a look at the tools we'll be using to build our own
+infrastructure on top of OpenStack.
+
+** Nova
+** Neutron
+** Cinder
+** Swift
+** Keystone
+** Placement
+** Glance
+** Horizon
+** Heat
