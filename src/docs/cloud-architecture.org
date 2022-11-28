@@ -3,12 +3,12 @@
 
 * Overview
 
-#+HTML: <img src="/assets/images/infrastructure.svg">
+#+HTML: <img src="/assets/infrastructure.svg">
 
 * OpenStack Nodes
 
 #+name: openstack-nodes
-#+begin_src plantuml :file ../../assets/images/openstack-nodes.svg :exports results
+#+begin_src plantuml :file ../../assets/openstack-nodes.svg :exports results
 @startuml
 skinparam BackgroundColor transparent
 skinparam componentStyle rectangle
@@ -43,7 +43,7 @@ component "OpenStack Components" {
 * Node Distribution
 
 #+name: node-distribution
-#+begin_src plantuml :file ../../assets/images/node-distribution.svg :exports results
+#+begin_src plantuml :file ../../assets/node-distribution.svg :exports results
 @startuml
 skinparam BackgroundColor transparent
 skinparam componentStyle rectangle

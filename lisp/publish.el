@@ -137,11 +137,10 @@ INFO is a plist used as a communication channel."
 	       :html-postamble nil
 	       :html-head-include-default-style nil)
 	 (list "assets"
-	       :base-extension (regexp-opt '("png" "svg" "jpe?g"))
+	       :base-extension (regexp-opt '("png" "svg" "webp" "jpe?g"))
 	       :base-directory "assets"
 	       :publishing-directory "public/assets"
-	       :publishing-function 'org-publish-attachment
-	       :recursive t)
+	       :publishing-function 'org-publish-attachment)
 	 (list "docs"
 	       :base-extension "org"
 	       :base-directory "src/docs"

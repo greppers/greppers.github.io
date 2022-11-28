@@ -101,11 +101,11 @@ of open scientific documents.
 
 *** Overview
 
-#+HTML: <img src="/assets/images/infrastructure.svg" class="r-stretch">
+#+HTML: <img src="/assets/infrastructure.svg" class="r-stretch">
 
 *** OpenStack Nodes
 
-#+HTML: <img src="/assets/images/openstack-nodes.svg" class="r-stretch">
+#+HTML: <img src="/assets/openstack-nodes.svg" class="r-stretch">
 
 ** Physical Architecture
 
@@ -125,18 +125,14 @@ of open scientific documents.
 
 *** Node Distribution
 
-#+HTML: <img src="/assets/images/node-distribution.svg" class="r-stretch">
+#+HTML: <img src="/assets/node-distribution.svg" class="r-stretch">
 
 * Useful tools
 
 ** Vagrant
 
-#+HTML: <img src="https://drive.google.com/uc?id=1NDJH7DuTx5hfoIG7TRkpmMeag2zRblIU" height="100">
-
 Build and maintain portable virtual software development environments.
 
 ** Terraform
-
-#+HTML: <img src="https://drive.google.com/uc?id=1CWn_bgByvF4liFXKLM-4MSst2_Gn3_Q9" height="100">
 
 Configure infrastructure through declarative configuration files.
