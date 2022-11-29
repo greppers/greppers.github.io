@@ -4,18 +4,30 @@
 #+REVEAL_ROOT: https://cdn.jsdelivr.net/npm/reveal.js
 #+REVEAL_HLEVEL: 1
 #+REVEAL_THEME: black
+#+REVEAL_EXTRA_CSS: /css/reveal.css
 
 * Introduction
 
 OpenStack is
 
 #+ATTR_REVEAL: :frag (appear)
-- /the/ operating system of your cloud infrastructure
 - an industry standard cloud computing infrastructure software project
-- a modular, pluggable and composable system for controlling massively
-  scalable clouds
+- a composable system for creating and managing massively scalable
+  clouds
+- /the/ operating system of your cloud infrastructure
 
-** What else?
+** Visual representation
+
+#+begin_export html
+<figure>
+    <img src="https://www.openstack.org/software/images/diagram/overview-diagram-new.svg"
+	 class="r-stretch"
+         alt="Elephant at sunset">
+    <figcaption>https://www.openstack.org/software/images/diagram/overview-diagram-new.svg</figcaption>
+</figure>
+#+end_export
+
+** Architecture
 
 OpenStack follows a modular architecture; it provides you with all of
 the necessary tools to construct your own cloud infrastructure,
