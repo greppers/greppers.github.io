@@ -69,12 +69,46 @@ other services.
 Let's have a look at some of the most important services that
 OpenStack features.
 
-** Nova
+** Nova -- Compute
+
+Nova is a collection of daemons which provide the means to provision
+compute instances, i.e. virtual machines and baremetal servers and
+containers.
+
 ** Neutron
 ** Cinder
 ** Swift
 ** Keystone
 ** Placement
 ** Glance
-** Horizon
 ** Heat
+** Horizon
+
+* Controlling the different objects
+
+The =openstack= command-line utility is your interface to controlling
+every object in the infrastructure.
+
+#+begin_src sh
+$ openstack {backup|hypervisor|image|network|object|...}
+#+end_src
+
+* Managing multiple clouds
+
+#+begin_src yaml
+clouds:
+  devstack:
+    auth:
+      auth_url: http://192.168.122.10:5000/
+      project_name: demo
+      username: demo
+      password: securep4ssword
+    region_name: RegionOne
+  ds-admin:
+    auth:
+      auth_url: http://192.168.122.10:5000/
+      project_name: admin
+      username: admin
+      password: verysaf3passw0rd
+    region_name: RegionOne
+#+end_src
