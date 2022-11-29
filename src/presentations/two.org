@@ -1,18 +1,37 @@
-#+TITLE: OpenStack Explained
-#+SUBTITLE: Let's demistify OpenStack!
+#+TITLE: Demistifying OpenStack
 #+EXPORT_FILE_NAME: 2
 #+OPTIONS: toc:1 num:nil
 #+REVEAL_ROOT: https://cdn.jsdelivr.net/npm/reveal.js
 #+REVEAL_HLEVEL: 1
-#+REVEAL_THEME: sky
+#+REVEAL_THEME: black
 
 * Introduction
-OpenStack is:
-- an industry standard
-- a cloud computing infrastructure software project
+
+OpenStack is
+
+#+ATTR_REVEAL: :frag (appear)
+- /the/ operating system of your cloud infrastructure
+- an industry standard cloud computing infrastructure software project
 - a modular, pluggable and composable system for controlling massively
   scalable clouds
-  
+
+** What else?
+
+OpenStack follows a modular architecture; it provides you with all of
+the necessary tools to construct your own cloud infrastructure,
+e.g. orchestration, clustering, virtualization, networking,
+monitoring, alarming, cost tracking, etc.
+
+** Just like LEGOs
+
+#+HTML: <img src="https://upload.wikimedia.org/wikipedia/commons/0/0f/2_duplo_lego_bricks.jpg" height="100">
+
+OpenStack's individual components fit together like LEGOs, except it's
+more complicated.
+
+Every service exposes an API for programmability and integration with
+other services.
+
 * Components
 
 Let's have a look at the tools we'll be using to build our own
