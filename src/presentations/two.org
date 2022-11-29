@@ -16,16 +16,13 @@ OpenStack is
   clouds
 - /the/ operating system of your cloud infrastructure
 
-** Visual representation
+** Huh?
 
-#+begin_export html
-<figure>
-    <img src="https://www.openstack.org/software/images/diagram/overview-diagram-new.svg"
-	 class="r-stretch"
-         alt="Elephant at sunset">
-    <figcaption>https://www.openstack.org/software/images/diagram/overview-diagram-new.svg</figcaption>
-</figure>
-#+end_export
+#+ATTR_REVEAL: :frag (appear)
+OpenStack is a just set of Python packages, sitting atop a Linux
+distribution of your choice.
+
+#+HTML: <img src="https://www.python.org/static/community_logos/python-logo-generic.svg" width="300" class="fragment">
 
 ** Architecture
 
@@ -44,10 +41,33 @@ more complicated.
 Every service exposes an API for programmability and integration with
 other services.
 
+** Visual representation
+
+*** Higher-level overview
+
+#+begin_export html
+<figure>
+  <img src="https://www.openstack.org/software/images/diagram/overview-diagram-new.svg"
+       class="r-stretch"
+       alt="OpenStack higher-level overview diagram">
+  <figcaption>https://www.openstack.org/software/images/diagram/overview-diagram-new.svg</figcaption>
+</figure>
+#+end_export
+
+*** Lower-level overview
+
+#+begin_export html
+<figure>
+  <img src="https://object-storage-ca-ymq-1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/www-assets-prod/openstack-map/openstack-map-v20221001.jpg"
+       alt="OpenStack lower-level overview diagram">
+  <figcaption>https://www.openstack.org/software</figcaption>
+</figure>
+#+end_export
+
 * Components
 
-Let's have a look at the tools we'll be using to build our own
-infrastructure on top of OpenStack.
+Let's have a look at some of the most important services that
+OpenStack features.
 
 ** Nova
 ** Neutron

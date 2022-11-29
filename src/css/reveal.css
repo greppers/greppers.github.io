@@ -1,1 +1,4 @@
 .reveal figcaption { font-size: 0.5em; }
+.reveal .slide-background {
+      background-size: contain !important;
+}
