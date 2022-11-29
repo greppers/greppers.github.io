@@ -75,12 +75,118 @@ Nova is a collection of daemons which provide the means to provision
 compute instances, i.e. virtual machines and baremetal servers and
 containers.
 
-** Neutron
-** Cinder
-** Swift
+*** REST API Example
+
+Querying servers:
+
+#+caption: GET /servers/detail
+#+begin_src js
+{
+    "servers": [
+        {
+            "name": "t1",
+            "OS-EXT-SRV-ATTR:host": "devstack1",
+            "status": "ACTIVE",
+	          ...
+        },
+        ...
+    ]
+}
+#+end_src
+
+** Neutron -- Networking
+
+Neutron provides connectivity between interface devices, lets you
+build advanced networking topologies and define sophisticated network
+policies.
+
+*** REST API Example
+
+Returns all networks named =net0=.
+
+#+caption: GET ${HOST}/v2.0/networks?name=net0
+#+begin_src js
+{
+    "networks": [
+        {
+            "admin_state_up": true,
+            "id": "396f12f8-521e-4b91-8e21-2e003500433a",
+            "name": "net0",
+            "provider:network_type": "vlan",
+            "provider:physical_network": "physnet1",
+            "provider:segmentation_id": 1002,
+            "router:external": false,
+            "shared": false,
+            "status": "ACTIVE",
+            "subnets": [],
+            "tenant_id": "20bd52ff3e1b40039c312395b04683cf"
+            "project_id": "20bd52ff3e1b40039c312395b04683cf"
+        }
+    ],
+}
+
+#+end_src
+
+** Cinder -- Block Storage
+
+Cinder virtualizes the management of block storage devices and
+provides an API for querying and consuming these resources without
+requiring any knowledge of their deployment location or any of their
+underlying properties.
+
+#+ATTR_REVEAL: :frag (appear)
+- Fault-tolerance
+- Recoverability
+- High-availability
+- Encryption
+
+** Swift -- Object Store
+
+Swift is a highly-available, distributed, and consistent object/blob
+store. Swift is ideal for storing unstructured data that can grow
+without bound, and it's accessed through its API.
+
+This is where your virtual machine images go!
+
 ** Keystone
+
+Keystone provides client authentication, service discovery, and
+distributed multi-tenant authorization through a unified API.
+
+#+ATTR_REVEAL: :frag (appear)
+- Unified quotas
+- Credential encryption
+
 ** Placement
 ** Glance
+
+Glance lets user upload, discover and retrieve data assets meant to be
+used in conjunction with other services, including *virtual machine
+images* and their *metadata*.
+
+*** REST API Example
+
+#+caption: GET ${HOST}/v1/images/detail
+#+begin_src js
+{'images': [
+  {'uri': 'http://glance.openstack.example.org/v1/images/71c675ab-d94f-49cd-a114-e12490b328d9',
+   'name': 'Ubuntu 10.04 Plain 5GB',
+   'disk_format': 'vhd',
+   'container_format': 'ovf',
+   'size': '5368709120',
+   'checksum': 'c2e5db72bd7fd153f53ede5da5a06de3',
+   'created_at': '2010-02-03 09:34:01',
+   'updated_at': '2010-02-03 09:34:01',
+   'deleted_at': '',
+   'status': 'active',
+   'is_public': true,
+   'min_ram': 256,
+   'min_disk': 5,
+   'owner': null,
+   'properties': {'distro': 'Ubuntu 10.04 LTS'}},
+  ...]}
+#+end_src
+
 ** Heat
 ** Horizon
 
