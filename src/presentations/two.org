@@ -140,13 +140,26 @@ underlying properties.
 - High-availability
 - Encryption
 
-** Swift -- Object Store
+** Swift -- Object Storage
 
 Swift is a highly-available, distributed, and consistent object/blob
 store. Swift is ideal for storing unstructured data that can grow
 without bound, and it's accessed through its API.
 
 This is where your virtual machine images go!
+
+*** REST API Examples
+
+#+begin_example
+# Create, update, or delete account metadata
+POST ${HOST}/v1/{account}
+
+# Create a new container
+PUT ${HOST}/v1/{account}/{container}
+
+# Delete an object
+DELETE ${HOST}/v1/{account}/{container}/{object}
+#+end_example
 
 ** Keystone
 
@@ -188,7 +201,22 @@ images* and their *metadata*.
 #+end_src
 
 ** Heat
+
 ** Horizon
+
+A web frontend which provides administrators and end users a central
+interface for managing OpenStack's major services, e.g. Nova,
+Keystone, Swift, and more.
+
+*** UI
+
+#+begin_export html
+<figure>
+  <img src="https://docs.openstack.org/horizon/latest/_images/dashboard_project_tab.png"
+       alt="OpenStack Horizon dashboard preview">
+  <figcaption>https://docs.openstack.org/horizon/latest/user/log-in.html</figcaption>
+</figure>
+#+end_export
 
 * Controlling the different objects
 
@@ -218,3 +246,7 @@ clouds:
       password: verysaf3passw0rd
     region_name: RegionOne
 #+end_src
+
+* That's it! 🤸
+
+Thank you for your attention.
