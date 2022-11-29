@@ -1,6 +1,5 @@
 #+TITLE: Cloud Composition
 #+SUBTITLE: We got interesting stuff in here!
-#+EXPORT_FILE_NAME: 1
 #+OPTIONS: toc:1 num:nil
 #+REVEAL_ROOT: https://cdn.jsdelivr.net/npm/reveal.js
 #+REVEAL_HLEVEL: 1

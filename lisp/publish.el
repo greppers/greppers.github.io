@@ -46,10 +46,6 @@
 (use-package ox-reveal
   :ensure t)
 
-(setq default-directory
-      (expand-file-name
-       (project-root (project-current))))
-
 ;;; Configurations:
 
 ;; Org caching:
