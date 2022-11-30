@@ -37,8 +37,7 @@ component "OpenStack Components" {
 @enduml
 #+end_src
 
-#+RESULTS: openstack-nodes
-[[file:../../assets/images/openstack-nodes.svg]]
+#+HTML: <img src="/assets/openstack-nodes.svg">
 
 * Node Distribution
 
@@ -75,5 +74,4 @@ component "Storage 2" {
 @enduml
 #+end_src
 
-#+RESULTS: node-distribution
-[[file:../../assets/images/node-distribution.svg]]
+#+HTML: <img src="/assets/node-distribution.svg">
