@@ -8,7 +8,7 @@
 * OpenStack Nodes
 
 #+name: openstack-nodes
-#+begin_src plantuml :file ../../assets/openstack-nodes.svg :exports results
+#+begin_src plantuml :file ../../assets/openstack-nodes.svg :results none
 @startuml
 skinparam BackgroundColor transparent
 skinparam componentStyle rectangle
@@ -42,13 +42,14 @@ component "OpenStack Components" {
 * Node Distribution
 
 #+name: node-distribution
-#+begin_src plantuml :file ../../assets/node-distribution.svg :exports results
+#+begin_src plantuml :file ../../assets/node-distribution.svg :results none
 @startuml
 skinparam BackgroundColor transparent
 skinparam componentStyle rectangle
+skinparam classFontColor white
 
 component "Compute 1" {
-	node Essia   #2a9d8f
+	node Mohamed   #2a9d8f
 }
 
 component "Compute 2" {
@@ -59,17 +60,18 @@ component "Compute 3" {
 	node Oumayma #2a9d8f
 }
 
+component "Compute 4" {
+	node Farouk  #2a9d8f
+}
+
 component "Controller" {
-	node Khalil  #f4a261
+
+	node Essia    #f4a261
+}
+
+component "Storage" {
 	node Taha    #f4a261
-}
-
-component "Storage 1" {
-	node Mohamed #8ecae6
-}
-
-component "Storage 2" {
-	node Farouk  #8ecae6
+	node Khalil  #f4a261
 }
 @enduml
 #+end_src
